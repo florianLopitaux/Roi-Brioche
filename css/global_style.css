@@ -8,6 +8,11 @@
     src: url("../assets/TT-Norms-Fonts/TTNorms-Bold.otf") format("opentype");
 }
 
+@font-face {
+    font-family: 'TT-Norms-ExtraBold';
+    src: url("../assets/TT-Norms-Fonts/TTNorms-ExtraBold.otf") format("opentype");
+}
+
 * {
     margin: 0;
     padding: 0;
