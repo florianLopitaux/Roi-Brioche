@@ -16,6 +16,8 @@
 }
 
 body {
+    overflow-x: hidden;
+
     width: 100vw;
     height: 100vh;
 
@@ -41,6 +43,11 @@ body {
 .basic-btn:active {
 	position: relative;
 	top: .2vh;
+}
+
+.basic-btn.glass-effect {
+    background-color: rgba(255, 255, 255, .3) !important;
+    border: 0;
 }
 
 /*
