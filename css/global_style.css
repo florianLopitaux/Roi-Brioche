@@ -98,3 +98,17 @@ header div#temp-div {
         align-self: flex-end;
     }
 }
+
+/*
+███████  ██████   ██████  ████████ ███████ ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+█████   ██    ██ ██    ██    ██    █████   ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+██       ██████   ██████     ██    ███████ ██   ██
+*/
+body footer {
+    width: 100%;
+    height: 100vh;
+
+    background-color: linear-gradient(to top, #fed6e3 0%, #a8edea 100%);
+}
