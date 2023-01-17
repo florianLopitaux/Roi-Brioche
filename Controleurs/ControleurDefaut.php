@@ -4,7 +4,8 @@ class ControleurDefaut
 {
     public function defautAction()
     {
-        Vue::montrer('index/voir', array('hop' =>  'nope'));
+        $O_recetteHasard = new RecetteHasard();
+        Vue::montrer('index/voir', array('allRecettesHasard' =>  array($O_recetteHasard->getRecetteHasard(), $O_recetteHasard->getRecetteHasard(), $O_recetteHasard->getRecetteHasard())));
     }
 
 }
