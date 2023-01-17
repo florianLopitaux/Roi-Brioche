@@ -22,9 +22,10 @@ echo '<link rel="stylesheet" href="css/index_style.css"/>
         <section id="recipes-container">
             <!-- temp div template, create after dynamically with php linked with DB -->';
 
-Vue::montrer('index/recetteHasard', array('recetteHasard' =>  $A_vue['allRecettesHasard'][0]));
-Vue::montrer('index/recetteHasard', array('recetteHasard' =>  $A_vue['allRecettesHasard'][1]));
-Vue::montrer('index/recetteHasard', array('recetteHasard' =>  $A_vue['allRecettesHasard'][2]));
+// TODO Passage en formulaire quand je saurais comment faire recette/id
+for ($indexRecette = 0; $indexRecette < sizeof($A_vue['allRecettesHasard']); ++$indexRecette) {
+    Vue::montrer('index/recetteHasard', array('recetteHasard' =>  $A_vue['allRecettesHasard'][$indexRecette]));
+}
 
 echo '</section>
 
