@@ -20,25 +20,13 @@ echo '<link rel="stylesheet" href="css/index_style.css"/>
         <h2>Sélection du jour</h2>
 
         <section id="recipes-container">
-            <!-- temp div template, create after dynamically with php linked with DB -->
-            <div class="recipe">
-                <img src="assets/img/#" alt="image representing the food described by the recipe"/>
-                <h3>Donuts au sucre</h3>
-                <p>La recette d\'exception selon Homer Simpson</p>
-            </div>
+            <!-- temp div template, create after dynamically with php linked with DB -->';
 
-            <div class="recipe">
-                <img src="assets/img/#" alt="image representing the food described by the recipe"/>
-                <h3>Brioche Tresser</h3>
-                <p>Son mouelleux est renversant</p>
-            </div>
+Vue::montrer('index/recetteHasard', array('recetteHasard' =>  $A_vue['allRecettesHasard'][0]));
+Vue::montrer('index/recetteHasard', array('recetteHasard' =>  $A_vue['allRecettesHasard'][1]));
+Vue::montrer('index/recetteHasard', array('recetteHasard' =>  $A_vue['allRecettesHasard'][2]));
 
-            <div class="recipe">
-                <img src="assets/img/#" alt="image representing the food described by the recipe"/>
-                <h3>Pain d\'épices</h3>
-                <p>Un mélange de saveurs qui émoustille les papilles</p>
-            </div>
-        </section>
+echo '</section>
 
         <button id="random-recipes-btn" class="basic-btn glass-effect">Recette au hasard</button>
     </section>
