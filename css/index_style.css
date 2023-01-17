@@ -1,3 +1,7 @@
+main {
+    width: 100vw;
+}
+
 /*
 ██   ██  ██████  ███    ███ ███████     ███████ ███████  ██████ ████████ ██  ██████  ███    ██
 ██   ██ ██    ██ ████  ████ ██          ██      ██      ██         ██    ██ ██    ██ ████   ██
@@ -56,6 +60,10 @@ h1 strong {
         width: 30%;
         height: 90%;
     }
+
+    #home-content-section h1 {
+        width: auto;
+    }
 }
 
 /*
@@ -73,8 +81,6 @@ main section#random-recipes-section {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-
-    background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 
 #random-recipes-section h2 {
