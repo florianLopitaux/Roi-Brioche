@@ -1,10 +1,10 @@
 <?php
-require_once 'Noyau/ChargementAuto.php';
+session_start();
 class ControleurInscription
 {
     public function defautAction()
     {
-        Vue::montrer('inscription', array('' =>  ''));
+        Vue::montrer('inscription/voir', array('' =>  ''));
     }
 
     public function inscriptionAction()
@@ -19,6 +19,8 @@ class ControleurInscription
         if ($S_password == $S_check_password && empty($e)) {
             $O_user = new Inscription($S_email, $S_pseudo, $S_password);
             $exception = $O_user->insertUser();
+
+            $_SESSION['user'] = $S_email;
         } elseif (!empty($e)) {
             throw new Exception($e);
         } else {
