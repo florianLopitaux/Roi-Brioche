@@ -10,24 +10,16 @@ class ControleurInscription
     public function inscriptionAction()
     {
 //       TODO Demander au prof pour le $_POST à remplacer par $A_postParams
-        $e = '';
-        $S_pseudo = !empty($_POST['pseudo']) ? $_POST['pseudo'] : $e .= "Vous n'avez pas renseigner de pseudo.";
-        $S_email = !empty($_POST['email']) ? $_POST['email'] : $e .= "Vous n'avez pas renseigner d'email.";
-        $S_password = !empty($_POST['password']) ? $_POST['password'] : $e .= "Vous n'avez pas renseigner de mot de passe.";
-        $S_check_password = !empty($_POST['verif_password']) ? $_POST['verif_password'] : $e .= "Vous n'avez pas renseigner de vérification de mot de passe.";
+        $S_pseudo = !empty($_POST['pseudo']) ? $_POST['pseudo'] : null;
+        $S_email = !empty($_POST['email']) ? $_POST['email'] : null;
+        $S_password = !empty($_POST['password']) ? $_POST['password'] : null;
+        $S_check_password = !empty($_POST['verif_password']) ? $_POST['verif_password'] : null;
 
-        if ($S_password == $S_check_password && empty($e)) {
+        if ($S_password == $S_check_password) {
             $O_user = new Inscription($S_email, $S_pseudo, $S_password);
-            $exception = $O_user->insertUser();
+            $O_user->insertUser();
 
             $_SESSION['user'] = $S_email;
-        } elseif (!empty($e)) {
-            throw new Exception($e);
-        } else {
-            throw new Exception("Les mots de passe ne correspondent pas");
-        }
-        if ($exception !== '') {
-            throw new Exception('Erreur : Impossible d\'ajouter cette utilisateur');
         }
     }
 }

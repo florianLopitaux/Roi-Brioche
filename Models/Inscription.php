@@ -22,16 +22,9 @@ final class Inscription extends Model {
         $this->_D_dateDeDerniereConnexion = $date;
     }
 
-    public function insertUser() : string
+    public function insertUser() : void
     {
-        try {
-            $O_query = $this->getOConnexion()->prepare("INSERT INTO `Utilisateur` (`mail`, `pseudo`, `mdp`, `dateDeCreation`, `dateDeDerniereConnexion`) VALUES (?, ?, ?, ?, ?)");
-            $this->getOConnexion()->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $this->getOConnexion()->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-
-            $O_query->execute(array($this->_S_mail, $this->_S_pseudo, $this->_S_mdp, $this->_D_dateDeCreation, $this->_D_dateDeDerniereConnexion));
-        } catch (PDOException $e) {
-            return $e->getMessage();
-        } return '';
+        $O_query = $this->getOConnexion()->prepare("INSERT INTO `Utilisateur` (`mail`, `pseudo`, `mdp`, `dateDeCreation`, `dateDeDerniereConnexion`) VALUES (?, ?, ?, ?, ?)");
+        $O_query->execute(array($this->_S_mail, $this->_S_pseudo, $this->_S_mdp, $this->_D_dateDeCreation, $this->_D_dateDeDerniereConnexion));
     }
 }
