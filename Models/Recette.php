@@ -1,8 +1,6 @@
 <?php
-require 'Appreciation.php';
-require 'Utilisateur.php';
 
-final class Recette{
+final class Recette extends Model {
     private $_I_id;
     private $_S_nom;
     private $_F_moyenne;
@@ -17,7 +15,8 @@ final class Recette{
     private $_A_appreciations;
     private $_B_photographie;
 
-    private function __construct($I_id, $S_nom, $F_moyenne, $I_tempsDePreparation, $S_difficulte, $S_cout, $S_description, $S_typeDeCuisson, $A_ingredients, $A_ustensiles, $A_particularites, $A_appreciations, $B_photographie){
+    public function __construct($I_id, $S_nom, $F_moyenne, $I_tempsDePreparation, $S_difficulte, $S_cout, $S_description, $S_typeDeCuisson, $A_ingredients, $A_ustensiles, $A_particularites, $A_appreciations, $B_photographie)
+    {
         $this->_I_id = $I_id;
         $this->_S_nom = $S_nom;
         $this->_F_moyenne=$F_moyenne;
@@ -30,29 +29,23 @@ final class Recette{
         $this->_A_ustensiles = $A_ustensiles;
         $this->_A_particularites = $A_particularites;
         $this->_A_appreciations = $A_appreciations;
-        $this->_B_photographie = $B_photographie; 
+        $this->_B_photographie = $B_photographie;
+
+        $this->getOConnexion();
     }
 
 
-    public static function getParId($I_id): Recette{
-        
-        $A_config = parse_ini_file(CHEMIN_VERS_FICHIER_INI, true);
-        if (is_array($A_config)) {
-            $S_dsn = $A_config['type'] . ':dbname=' . BASE_DE_DONNEES . ';host=' . $A_config['adresse_IP'];
-            $O_conn= new PDO($S_dsn,$A_config['utilisateur'],$A_config['motdepasse']);
-        }
-
-        $S_requete = 'select * from Recette where id_Recette = ? ';
-
-        $O_statement = $O_conn->prepare($S_requete);
+    public function getParId($I_id): Recette
+    {
+        $S_requete = 'SELECT * FROM `Recette` WHERE `id_Recette` = ? ';
+        $O_statement = $this->_O_connexion->prepare($S_requete);
         $O_statement->execute(array($I_id));
 
         $O_statement->setFetchMode(PDO::FETCH_ASSOC);
-
         $A_values = $O_statement->fetch();
 
 
-        $S_requete = 'select nom_Ingredient, nom_Ustensile, nom_Particularite from Composer, Posseder, Contenir where id_Recette = ? and Composer.id_Recette = Posseder.id_Recette and Composer.id_Recette = Contenir.id_Recette' ;
+        $S_requete = 'SELECT `nom_Ingredient`, `nom_Ustensile`, `nom_Particularite` FROM `Composer`, `Posseder`, `Contenir` WHERE `id_Recette` = ? AND `Composer.id_Recette` = `Posseder.id_Recette` AND `Composer.id_Recette` = `Contenir.id_Recette`';
 
         $O_statement = $O_conn->prepare($S_requete);
         $O_statement->execute(array($I_id));
@@ -77,7 +70,7 @@ final class Recette{
         return $O_recette; 
     }
 
-    public static function creerRecette($S_nom, $F_moyenne, $I_tempsDePreparation, $S_difficulte, $S_cout, $S_description, $S_typeDeCuisson, $B_photographie, $A_ingredients, $A_ustensiles, $A_particularites): Recette{
+    public static function creerRecette($S_nom, $F_moyenne, $I_tempsDePreparation, $S_difficulte, $S_cout, $S_description, $S_typeDeCuisson, $B_photographie, $A_ingredients, $A_ustensiles, $A_particularites): Recette {
         
         $A_config = parse_ini_file(CHEMIN_VERS_FICHIER_INI, true);
         if (is_array($A_config)) {

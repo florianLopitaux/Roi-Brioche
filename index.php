@@ -18,20 +18,6 @@
     $O_controleur = new Controleur($S_controleur, $S_action);
 */
 
-    // - - - - - - - - - - - - - - - - - - - - - - - PARSER PDO - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-    const CHEMIN_VERS_FICHIER_INI = 'connexion.ini';
-    const BASE_DE_DONNEES = 'marmitar_bd';
-    $A_config = parse_ini_file(CHEMIN_VERS_FICHIER_INI, true);
-    if (is_array($A_config)) {
-        $A_config = $A_config['serveur_marmitar'];
-        $S_dsn = $A_config['type'] . ':dbname=' . BASE_DE_DONNEES . ';host=' . $A_config['adresse_IP'].';port=3306';
-
-        $O_conn= new PDO($S_dsn, $A_config['utilisateur'], $A_config['motdepasse']);
-    }
-
-    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
     $S_urlADecortiquer = isset($_GET['url']) ? $_GET['url'] : null;
     $A_postParams = isset($_POST) ? $_POST : null;
 

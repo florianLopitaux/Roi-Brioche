@@ -9,7 +9,7 @@ final class Constantes
 
     const REPERTOIRE_VUES        = '/Vues/';
 
-    const REPERTOIRE_MODELE      = '/Modele/';
+    const REPERTOIRE_MODELE      = '/Models/';
 
     const REPERTOIRE_NOYAU       = '/Noyau/';
 

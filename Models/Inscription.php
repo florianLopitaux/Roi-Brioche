@@ -1,6 +1,8 @@
 <?php
 
-final class Utilisateur extends Model {
+use Cassandra\Date;
+
+final class Inscription extends Model {
     private $_S_mail;
     private $_S_pseudo;
     private $_S_mdp;
@@ -10,12 +12,14 @@ final class Utilisateur extends Model {
 
     function __construct($S_mail, $S_pseudo, $S_mdp)
     {
+        parent::__construct();
+
         $this->_S_mail = $S_mail;
         $this->_S_pseudo = $S_pseudo;
         $this->_S_mdp = $S_mdp;
 //        $this->_B_photographie = $B_photographie;
 
-        $date = new date("Y-m-d");
+        $date = date("Y-m-d");
         $this->_D_dateDeCreation = $date;
         $this->_D_dateDeDerniereConnexion = $date;
     }
@@ -23,11 +27,11 @@ final class Utilisateur extends Model {
     public function insertUser() : string
     {
         try {
-            $this->_O_connexion->prepare("INSERT INTO `Utilisateur` (`mail`, `pseudo`, `mdp`, `dateDeCreation`, `dateDeDerniereConnexion`) VALUES (?, ?, ?, ?,?)");
-            $this->_O_connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $this->_O_connexion->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+            $O_query = $this->getOConnexion()->prepare("INSERT INTO `Utilisateur` (`mail`, `pseudo`, `mdp`, `dateDeCreation`, `dateDeDerniereConnexion`) VALUES (?, ?, ?, ?, ?)");
+            $this->getOConnexion()->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->getOConnexion()->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
-            $this->_O_connexion->execute(array($this->_S_mail, $this->_S_pseudo, $this->_S_mdp, $this->_D_dateDeCreation, $this->_D_dateDeDerniereConnexion));
+            $O_query->execute(array($this->_S_mail, $this->_S_pseudo, $this->_S_mdp, $this->_D_dateDeCreation, $this->_D_dateDeDerniereConnexion));
         } catch (PDOException $e) {
             return $e->getMessage();
         } return '';

@@ -13,8 +13,6 @@
 <!--    <link rel="stylesheet" href="../css/login_style.css"/>-->
 </head>
     <body>
-        <?php Vue::montrer('standard/navbar'); ?>
         <?php echo $A_vue['body'] ?>
-        <?php Vue::montrer('standard/pied'); ?>
     </body>
 </html>

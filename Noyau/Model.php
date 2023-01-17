@@ -12,7 +12,8 @@ class Model
      */
     public function __construct()
     {
-        $this->_A_config = parse_ini_file("../connexionBD.ini", true);
+        $this->_A_config = parse_ini_file("connexion.ini", true);
+        echo "eded";
         if (is_array($this->_A_config)) {
             $S_dsn = $this->_A_config['type'] . ':dbname=' . $this->BASE_DE_DONNEES . ';host=' . $this->_A_config['adresse_IP'];
             $this->_O_connexion = new PDO($S_dsn, $this->_A_config['utilisateur'], $this->_A_config['motdepasse']);

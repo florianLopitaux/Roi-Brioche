@@ -7,9 +7,9 @@ echo '<link rel="stylesheet" href="../css/login_style.css"/>
 <main>
     <h1>Créer un compte</h1>
 
-    <form method="POST">
-        <a id="back-arrow" href="index.html"><img src="../assets/img/arrow-back-outline.svg" alt="Arrow to return to the home of the website"/></a>
-
+    <form action="/inscription/inscription" method="POST">
+        <a id="back-arrow" href="/"><img src="../assets/img/arrow-back-outline.svg" alt="Arrow to return to the home of the website"/></a>
+        
         <input class="green-input" type="text" name="pseudo" placeholder="Pseudonyme"/>
         <input class="green-input" type="text" name="email" placeholder="Email"/>
 
@@ -21,3 +21,4 @@ echo '<link rel="stylesheet" href="../css/login_style.css"/>
 </main>
 
 <p id="copyright-text">Copyright © Tous droits réservés Roi Brioche - 2023</p>';
+//TODO Ajout d'un input pour l'image;
