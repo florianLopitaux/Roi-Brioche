@@ -90,9 +90,9 @@ main form {
 form a {
     position: absolute;
     top: 1vh;
-    left: 0;
+    left: 1vw;
 
-    width: 6vw;
+    width: auto;
     height: 4vh;
 }
 
