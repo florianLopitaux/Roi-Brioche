@@ -12,6 +12,37 @@ body p {
     text-align: center;
 }
 
+body main {
+    position: relative;
+
+    width: 80%;
+    height: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+
+    background-color: #fff;
+    border-radius: 3vh;
+}
+
+main h1 {
+    font-family: 'TT-Norms-Bold';
+}
+
+main span#text-to-register {
+    max-width: 80%;
+    text-align: center;
+}
+
+span#text-to-register a {
+    text-decoration: none;
+    font-family: 'TT-Norms-Bold';
+    color: cornflowerblue;
+}
+
 /*
 ██ ███    ███  ██████      ██████  ███████  ██████  ██████
 ██ ████  ████ ██           ██   ██ ██      ██      ██    ██
@@ -56,26 +87,6 @@ img#donut {
 ██      ██    ██ ██   ██ ██  ██  ██
 ██       ██████  ██   ██ ██      ██
 */
-body main {
-    position: relative;
-
-    width: 80%;
-    height: 60%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5vh;
-
-    background-color: #fff;
-    border-radius: 3vh;
-}
-
-main h1 {
-    font-family: 'TT-Norms-Bold';
-}
-
 main form {
     overflow-x: hidden;
     width: 70%;
@@ -84,7 +95,7 @@ main form {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2vh;
+    gap: 3vh;
 }
 
 form a {

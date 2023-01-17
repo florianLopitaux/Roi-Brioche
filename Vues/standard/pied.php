@@ -1,7 +1,7 @@
 <?php
 echo '<footer>
     <section id="left-container">
-        <img src="../assets/img/logo.png" alt="Logo Roi Brioche"/>
+        <img src="assets/img/logo.png" alt="Logo Roi Brioche"/>
 
             <section id="left-bottom-box">
                 <button class="basic-btn">Nous contacter</button>

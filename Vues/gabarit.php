@@ -8,9 +8,8 @@
     <title>Roi Brioche</title>
 
     <!-- STYLE FILES -->
-    <link rel="stylesheet" href="../css/global_style.css"/>
-<!--    <link rel="stylesheet" href="../css/index_style.css"/>-->
-<!--    <link rel="stylesheet" href="../css/login_style.css"/>-->
+    <link rel="stylesheet" href="css/global_style.css"/>
+<!--    TODO Demander au prof pour l'import de fichier css-->
 </head>
     <body>
         <?php echo $A_vue['body'] ?>

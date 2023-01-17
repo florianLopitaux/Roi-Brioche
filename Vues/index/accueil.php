@@ -1,7 +1,7 @@
 <?php
 Vue::montrer('standard/header');
 
-echo '<link rel="stylesheet" href="../css/index_style.css"/>
+echo '<link rel="stylesheet" href="css/index_style.css"/>
 <main>
     <section id="home-section">
         <section id="home-content-section">
@@ -13,7 +13,7 @@ echo '<link rel="stylesheet" href="../css/index_style.css"/>
             </div>
         </section>
 
-        <img src="../assets/img/3D-logo-with-hand.svg" alt="decoration image representing a hand with the website logo above"/>
+        <img src="assets/img/3D-logo-with-hand.svg" alt="decoration image representing a hand with the website logo above"/>
     </section>
 
     <section id="random-recipes-section">
@@ -22,19 +22,19 @@ echo '<link rel="stylesheet" href="../css/index_style.css"/>
         <section id="recipes-container">
             <!-- temp div template, create after dynamically with php linked with DB -->
             <div class="recipe">
-                <img src="../assets/img/#" alt="image representing the food described by the recipe"/>
+                <img src="assets/img/#" alt="image representing the food described by the recipe"/>
                 <h3>Donuts au sucre</h3>
                 <p>La recette d\'exception selon Homer Simpson</p>
             </div>
 
             <div class="recipe">
-                <img src="../assets/img/#" alt="image representing the food described by the recipe"/>
+                <img src="assets/img/#" alt="image representing the food described by the recipe"/>
                 <h3>Brioche Tresser</h3>
                 <p>Son mouelleux est renversant</p>
             </div>
 
             <div class="recipe">
-                <img src="../assets/img/#" alt="image representing the food described by the recipe"/>
+                <img src="assets/img/#" alt="image representing the food described by the recipe"/>
                 <h3>Pain d\'épices</h3>
                 <p>Un mélange de saveurs qui émoustille les papilles</p>
             </div>
