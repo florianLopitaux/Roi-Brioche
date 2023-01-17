@@ -7,7 +7,7 @@ echo '<link rel="stylesheet" href="css/login_style.css"/>
 <main>
     <h1>Créer un compte</h1>
 
-    <form action="/inscription/inscription" method="POST">
+    <form action="/" method="POST">
         <a id="back-arrow" href="/"><img src="assets/img/arrow-back-outline.svg" alt="Arrow to return to the home of the website"/></a>
         
         <input class="green-input" type="text" name="pseudo" placeholder="Pseudonyme"/>
@@ -22,3 +22,4 @@ echo '<link rel="stylesheet" href="css/login_style.css"/>
 
 <p id="copyright-text">Copyright © Tous droits réservés Roi Brioche - 2023</p>';
 //TODO Ajout d'un input pour l'image;
+//TODO Demander si l'architecture inscription/voir.php est bonne;
