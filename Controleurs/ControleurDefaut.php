@@ -4,7 +4,7 @@ class ControleurDefaut
 {
     public function defautAction()
     {
-        Vue::montrer('index/accueil', array('hop' =>  'nope'));
+        Vue::montrer('index/voir', array('hop' =>  'nope'));
     }
 
 }
