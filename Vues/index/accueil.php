@@ -1,4 +1,6 @@
 <?php
+Vue::montrer('standard/header');
+
 echo '<link rel="stylesheet" href="../css/index_style.css"/>
 <main>
     <section id="home-section">
@@ -41,3 +43,5 @@ echo '<link rel="stylesheet" href="../css/index_style.css"/>
         <button id="random-recipes-btn" class="basic-btn glass-effect">Recette au hasard</button>
     </section>
 </main>';
+
+Vue::montrer('standard/pied');
