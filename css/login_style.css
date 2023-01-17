@@ -32,6 +32,11 @@ main h1 {
     font-family: 'TT-Norms-Bold';
 }
 
+main span#text-to-register {
+    max-width: 80%;
+    text-align: center;
+}
+
 span#text-to-register a {
     text-decoration: none;
     font-family: 'TT-Norms-Bold';
