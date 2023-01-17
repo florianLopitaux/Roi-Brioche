@@ -1,7 +1,5 @@
 <?php
 
-use Cassandra\Date;
-
 final class Inscription extends Model {
     private $_S_mail;
     private $_S_pseudo;
@@ -35,52 +33,5 @@ final class Inscription extends Model {
         } catch (PDOException $e) {
             return $e->getMessage();
         } return '';
-    }
-
-    public static function getParMail($S_mail): Utilisateur
-    {
-
-        $A_config = parse_ini_file(CHEMIN_VERS_FICHIER_INI, true);
-        if (is_array($A_config)) {
-            $S_dsn = $A_config['type'] . ':dbname=' . BASE_DE_DONNEES . ';host=' . $A_config['adresse_IP'];
-            $O_conn= new PDO($S_dsn,$A_config['utilisateur'],$A_config['motdepasse']);
-        }
-
-        $S_requete = 'select * from Utilisateur where mail = ?';
-
-        $O_statement = $O_conn->prepare($S_requete);
-        $O_statement->execute(array($S_mail));
-
-        $O_statement->setFetchMode(PDO::FETCH_ASSOC);
-
-        $A_values = $O_statement->fetch();
-
-        return new Utilisateur($A_values['mail'],$A_values['pseudo'],$A_values['mdp'],$A_values['dateDeCreation'],$A_values['dateDeDerniereConnexion'],$A_values['photographie']);
-    }
-
-
-
-    public function getMail(): string{
-        return $this->_S_mail;
-    }
-
-    public function getPseudo(): string{
-        return $this->_S_pseudo;
-    }
-
-    public function getMdp(): string{
-        return $this->_S_mdp;
-    }
-
-    public function getDateDeCreation(): date{
-        return $this->_S_dateDeCreation;
-    }
-
-    public function getDateDerniereConnexion(): date{
-        return $this->_D_dateDeDerniereConnexion;
-    }
-
-    public function getPhotographie(): array{
-        return $this->_B_photographie;
     }
 }
