@@ -27,6 +27,13 @@ class ControleurRecette
         }
 
         $O_recette = new Recette();
-        Vue::montrer('recette/voir', array('allRecettesResume' =>  $O_recette->getAllRecettesResumeByRecherche($A_postParam['search']), 'titre' => 'Résultat pour : ' . $A_postParam['search']));
+        $A_recettes = $O_recette->getAllRecettesResumeByRecherche($A_postParam['search']);
+
+        if (sizeof($A_recettes) == 0) {
+            $titre = 'Aucune recette trouvée';
+        } else {
+            $titre = 'Résultats pour : "' . $A_postParam['search'] . '"';
+        }
+        Vue::montrer('recette/voir', array('allRecettesResume' =>  $A_recettes, 'titre' => $titre));
     }
 }
