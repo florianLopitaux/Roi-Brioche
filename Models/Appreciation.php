@@ -1,58 +1,60 @@
 <?php
 
-final class Appreciation{
-    private $_O_recette;
-    private $_O_utilisateur;
-    private $_S_commmentaire;
-    private $_I_note;
-    private $_D_dateDeCreation;
+final class Appreciation extends Model {
+    private $_I_Id_Recette;
+    private string $_S_mail;
 
-    private function __construct($O_recette, $O_utilisateur, $S_commmentaire, $I_note, $D_dateDeCreation){
-        $this->_O_recette = $O_recette;
-        $this->_O_utilisateur = $O_utilisateur;
-        $this->_S_commmentaire = $S_commmentaire;
-        $this->_I_note = $_I_note;
-        $this->_D_dateDeCreation = $D_dateDeCreation;
+    private function __construct(int $I_Id_Recette){
+        parent::__construct();
+
+        $this->_I_Id_Recette = $I_Id_Recette;
     }
 
-    public static function getParRecetteEtUtilisateur($O_recette,$O_utilisateur): Appreciation{
+    public static function withIdRecette(int $I_Id_Recette) : Appreciation
+    {
+        $O_instance = new self();
+        $O_instance->_I_Id_Recette = $I_Id_Recette;
+        return $O_instance;
+    }
 
-        $A_config = parse_ini_file(CHEMIN_VERS_FICHIER_INI, true);
-        if (is_array($A_config)) {
-            $S_dsn = $A_config['type'] . ':dbname=' . BASE_DE_DONNEES . ';host=' . $A_config['adresse_IP'];
-            $O_conn= new PDO($S_dsn,$A_config['utilisateur'],$A_config['motdepasse']);
+    public static function withMail(string $S_mail) {
+        $O_instance = new self();
+        $O_instance->_S_mail = $S_mail;
+        return $O_instance;
+    }
+
+    public function getAppreciationByIdRecette() : array
+    {
+        $O_query = $this->getOConnexion()->query('SELECT `id_Recette`, `mail`, `note`, `commentaire`, `dateDeCreation` FROM `Appreciation` WHERE `id_Recette` = ?');
+        $O_query->execute(array($this->_I_Id_Recette));
+
+        $A_Appreciations = array();
+        while ($A_results = $O_query->fetch(PDO::FETCH_ASSOC)) {
+            $A_Appreciations[] = array(
+                'id_Recette' => $A_results['id_Recette'],
+                'mail' => $A_results['mail'],
+                'note' => $A_results['note'],
+                'commentaire' => $A_results['commentaire'],
+                'dateDeCreation' => $A_results['dateDeCreation']
+            );
         }
-
-        $S_requete = 'select * from Appreciation where id_Recette = ? and mail = ?';
-
-        $O_statement = $O_conn->prepare($S_requete);
-        $O_statement->execute(array($O_recette->getId(), $O_utilisateur->getMail()));
-
-        $O_statement->setFetchMode(PDO::FETCH_ASSOC);
-
-        $A_values = $O_statement->fetch();
-
-        return new Appreciation($O_recette, $O_utilisateur, $A_values['commentaire'], $A_values['note'], $A_values['dateDeCreation']);
+        return $A_Appreciations;
     }
 
-    
-    public function getRecette(): Recette{
-        return $this->_O_recette;
-    }
+    public function getAppreciationByMail() : array {
+        $O_query = $this->getOConnexion()->query('SELECT `id_Recette`, `mail`, `note`, `commentaire`, `dateDeCreation` FROM `Appreciation` WHERE `mail` = ?');
+        $O_query->execute(array($this->_S_mail));
 
-    public function getUtilisateur(): Utilisateur{
-        return $this->_O_utilisateur;
-    }
-
-    public function getCommentaire(): string{
-        return $this->_S_commmentaire;
-    }
-
-    public function getNote(): int{
-        return $this->_I_note;
-    }
-
-    public function getDateDeCreation(): date{
-        return $this->_S_dateDeCreation;
+        $A_Appreciations = array();
+        while ($A_results = $O_query->fetch(PDO::FETCH_ASSOC)) {
+            $A_Appreciations[] = array(
+                'id_Recette' => $A_results['id_Recette'],
+                'mail' => $A_results['mail'],
+                'note' => $A_results['note'],
+                'commentaire' => $A_results['commentaire'],
+                'dateDeCreation' => $A_results['dateDeCreation']
+            );
+        }
+        return $A_Appreciations;
     }
 }
