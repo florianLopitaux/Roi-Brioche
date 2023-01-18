@@ -58,4 +58,13 @@ final class Recette extends Model {
             'photographie' => $A_results['photographie']
         );
     }
+
+    // This function is used to search for recipes that match the search string
+    public function getAllRecettesResumeByRecherche(string $S_recherche)
+    {
+        $O_query = $this->getOConnexion()->prepare('SELECT `id_Recette`, `nom_Recette`, `difficulte`, `photographie` FROM `Recette` WHERE `nom_Recette` LIKE ?');
+        $O_query->execute(array('%' . $S_recherche . '%'));
+
+        return $O_query->fetchAll();
+    }
 }
