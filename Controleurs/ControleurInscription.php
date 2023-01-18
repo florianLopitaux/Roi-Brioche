@@ -7,19 +7,19 @@ class ControleurInscription
         Vue::montrer('inscription/voir', array('' =>  ''));
     }
 
-    public function inscriptionAction()
+    public function inscriptionAction($A_getParam, $A_postParam)
     {
-//       TODO Demander au prof pour le $_POST à remplacer par $A_postParams
-        $S_pseudo = !empty($_POST['pseudo']) ? $_POST['pseudo'] : null;
-        $S_email = !empty($_POST['email']) ? $_POST['email'] : null;
-        $S_password = !empty($_POST['password']) ? $_POST['password'] : null;
-        $S_check_password = !empty($_POST['verif_password']) ? $_POST['verif_password'] : null;
+        $S_pseudo = !empty($A_postParam['pseudo']) ? $A_postParam['pseudo'] : null;
+        $S_email = !empty($A_postParam['email']) ? $A_postParam['email'] : null;
+        $S_password = !empty($A_postParam['password']) ? $A_postParam['password'] : null;
+        $S_check_password = !empty($A_postParam['verif_password']) ? $A_postParam['verif_password'] : null;
 
         if ($S_password == $S_check_password) {
-            $O_user = new Inscription($S_email, $S_pseudo, $S_password);
+            $O_user = new Utilisateur($S_email, $S_pseudo, $S_password);
             $O_user->insertUser();
 
             $_SESSION['user'] = $S_email;
         }
+        header('Location: /');
     }
 }

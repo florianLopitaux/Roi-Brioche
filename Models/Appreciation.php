@@ -2,12 +2,10 @@
 
 final class Appreciation extends Model {
     private $_I_Id_Recette;
-    private string $_S_mail;
+    private $_S_mail;
 
-    private function __construct(int $I_Id_Recette){
+    function __construct(){
         parent::__construct();
-
-        $this->_I_Id_Recette = $I_Id_Recette;
     }
 
     public static function withIdRecette(int $I_Id_Recette) : Appreciation
