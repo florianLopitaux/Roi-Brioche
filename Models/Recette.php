@@ -7,18 +7,19 @@ final class Recette extends Model {
         parent::__construct();
     }
 
+    public function get3RecettesResume()
+    {
+        $O_query = $this->getOConnexion()->query('SELECT `id_Recette`, `nom_Recette`, `difficulte`, `photographie` FROM Recette ORDER BY RAND() LIMIT 3');
+        $O_query->execute();
+        return $O_query->fetchAll();
+    }
+
     public function getRecetteResumeById(int $I_id) : array
     {
         $O_query = $this->getOConnexion()->query('SELECT `id_Recette`, `nom_Recette`, `difficulte`, `photographie` FROM `Recette` WHERE `id_Recette` = ?');
         $O_query->execute(array($I_id));
-        $A_results = $O_query->fetch(PDO::FETCH_ASSOC);
 
-        return array(
-            'id_Recette' => $A_results['id_Recette'],
-            'nom_Recette' => $A_results['nom_Recette'],
-            'difficulte' => $A_results['difficulte'],
-            'photographie' => $A_results['photographie']
-        );
+        return $O_query->fetchAll();
     }
 
     public function getAllRecettesResume() : array
@@ -26,16 +27,7 @@ final class Recette extends Model {
         $O_query = $this->getOConnexion()->query('SELECT `id_Recette`, `nom_Recette`, `difficulte`, `photographie` FROM `Recette`');
         $O_query->execute();
 
-        $allRecettesResume = array();
-        while ($A_results = $O_query->fetch(PDO::FETCH_ASSOC)) {
-            $allRecettesResume[] = array(
-                'id_Recette' => $A_results['id_Recette'],
-                'nom_Recette' => $A_results['nom_Recette'],
-                'difficulte' => $A_results['difficulte'],
-                'photographie' => $A_results['photographie']
-            );
-        }
-        return $allRecettesResume;
+        return $O_query->fetchAll();
     }
 
     public function getRecetteById(int $I_id) : array
