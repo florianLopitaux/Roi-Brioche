@@ -8,10 +8,11 @@ class ControleurRecette
         Vue::montrer('recette/voir', array('allRecettesResume' =>  $O_recette->getAllRecettesResume()));
     }
 
-    // TODO Après avoir demander pour le $A_getParams, voir si c'est la bonne façon de faire avec $I_id
-    public function voirAction(int $I_Id)
+    public function voirAction($A_getParam, $A_postParam)
     {
+        if (sizeof($A_getParam) == 0 or $A_getParam[0] == '') header('Location: /recette');
+
         $O_recette = new Recette();
-        Vue::montrer('recette/voir', array('recette' =>  $O_recette->getRecetteById($I_Id)));
+        Vue::montrer('recette/recette', array('recette' =>  $O_recette->getRecetteById($A_getParam[0])));
     }
 }
