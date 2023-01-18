@@ -15,11 +15,14 @@ class ControleurInscription
         $S_check_password = !empty($A_postParam['verif_password']) ? $A_postParam['verif_password'] : null;
 
         if ($S_password == $S_check_password) {
-            $O_user = new Utilisateur($S_email, $S_pseudo, $S_password);
+            $O_user = new Utilisateur($S_email, $S_pseudo, password_hash($S_password, PASSWORD_BCRYPT));
             $O_user->insertUser();
 
             $_SESSION['user'] = $S_email;
+
+            header('Location: /');
+        } else {
+            header('Location: /inscription');
         }
-        header('Location: /');
     }
 }
