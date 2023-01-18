@@ -1,8 +1,7 @@
 <?php
 Vue::montrer('standard/header');
 
-echo '<link rel="stylesheet" href="css/index_style.css"/>
-<main>
+echo '<main>
     <section id="home-section">
         <section id="home-content-section">
             <h1>Le site de pâtisserie<br><strong>par référence</strong></h1>
