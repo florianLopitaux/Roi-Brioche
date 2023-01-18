@@ -4,6 +4,11 @@ class ControleurInscription
 {
     public function defautAction()
     {
+        if (isset($_SESSION['user'])) {
+            header('Location: /');
+            exit();
+        }
+
         Vue::montrer('inscription/voir', array('' =>  ''));
     }
 

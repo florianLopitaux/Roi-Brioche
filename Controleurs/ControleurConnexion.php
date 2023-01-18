@@ -3,6 +3,10 @@ class ControleurConnexion
 {
     public function defautAction()
     {
+        if (isset($_SESSION['user'])) {
+            header('Location: /');
+            exit();
+        }
         Vue::montrer('connexion/voir', array('' =>  ''));
     }
 
