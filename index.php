@@ -39,5 +39,6 @@ session_start();
     // Les différentes sous-vues ont été "crachées" dans le tampon d'affichage, on les récupère
     $contenuPourAffichage = Vue::recupererContenuTampon();
 
+    $S_url = isset($_GET['url']) ? $_GET['url'] : 'index';
     // On affiche le contenu dans la partie body du gabarit général
-    Vue::montrer('gabarit', array('body' => $contenuPourAffichage));
+    Vue::montrer('gabarit', array('body' => $contenuPourAffichage, 'url' => $S_url));
