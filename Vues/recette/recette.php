@@ -1,4 +1,7 @@
 <?php
+
+Vue::montrer('standard/header');
+
 echo '<p>Id :' . $A_vue['recette']['id_Recette'] . '</p>';
 echo '<p>Nom :' . $A_vue['recette']['nom_Recette'] . '</p>';
 echo '<p>moyenne :' . $A_vue['recette']['moyenne'] . '</p>';
@@ -11,3 +14,5 @@ echo '<p>ingredients :' . var_dump($A_vue['recette']['ingredients']) . '</p>';
 echo '<p>ustensiles :' . var_dump($A_vue['recette']['ustensiles']) . '</p>';
 echo '<p>particularites :' . var_dump($A_vue['recette']['particularites']) . '</p>';
 echo '<p>appreciations :' . var_dump($A_vue['recette']['appreciations']) . '</p>';
+
+Vue::montrer('standard/pied');
