@@ -97,39 +97,6 @@ main section#random-recipes-section {
     flex-direction: column;
 }
 
-#recipes-container div.recipe {
-    padding: 1vh 1vw;
-
-    width: 80%;
-    height: 56vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1vh;
-
-    background-color: #fff;
-    border-top-right-radius: 40px;
-    border-bottom-left-radius: 40px;
-}
-
-.recipe img {
-    width: 90%;
-    height: 60%;
-
-    border-top-right-radius: 40px;
-}
-
-.recipe h3 {
-    text-align: center;
-    font-family: 'TT-Norms-Bold';
-}
-
-.recipe p {
-    text-align: center;
-}
-
 @media screen and (min-width: 1150px) {
     main section#random-recipes-section {
         height: 100vh;
@@ -139,10 +106,5 @@ main section#random-recipes-section {
         height: 70vh;
 
         flex-direction: row;
-    }
-
-    #recipes-container div.recipe {
-        width: 20%;
-        height: 80%;
     }
 }
