@@ -10,7 +10,10 @@ class ControleurRecette
 
     public function voirAction($A_getParam, $A_postParam)
     {
-        if (sizeof($A_getParam) == 0 or $A_getParam[0] == '') header('Location: /recette');
+        if (sizeof($A_getParam) == 0 or $A_getParam[0] == '') {
+            header('Location: /recette');
+            exit();
+        }
 
         $O_recette = new Recette();
         Vue::montrer('recette/recette', array('recette' =>  $O_recette->getRecetteById($A_getParam[0])));
