@@ -4,3 +4,4 @@ echo '<div class="recipe">
     <h3>' . $A_vue['recette']['nom_Recette'] . '</h3>
     <p>Difficulté : ' . $A_vue['recette']['difficulte'] . '</p>
 </div>';
+// TODO Ajouter un input hidden pour l'id de la recette
