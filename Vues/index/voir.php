@@ -24,7 +24,7 @@ echo '<link rel="stylesheet" href="css/index_style.css"/>
 
 // TODO Passage en formulaire quand je saurais comment faire recette/id
 for ($indexRecette = 0; $indexRecette < sizeof($A_vue['allRecettesHasard']); ++$indexRecette) {
-    Vue::montrer('index/recetteHasard', array('recetteHasard' =>  $A_vue['allRecettesHasard'][$indexRecette]));
+    Vue::montrer('standard/recetteResume', array('recette' =>  $A_vue['allRecettesHasard'][$indexRecette]));
 }
 
 echo '</section>
@@ -34,3 +34,5 @@ echo '</section>
 </main>';
 
 Vue::montrer('standard/pied');
+
+// TODO DEMANDER COMMENT FAIRE QUAND ON A DEUX FORMULAIRES CAR DANS MA TETE TOUS LES FORMULAIRES MENENT VERS nomModeleAction() DANS LE CONTROLEUR
