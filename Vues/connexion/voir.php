@@ -6,10 +6,10 @@ echo '<img id="logo" class="decorate-img" src="/assets/img/logo.png" alt="Logo o
 <main>
     <h1>Se connecter</h1>
 
-        <form method="POST">
+        <form action="/connexion/connexion" method="POST">
             <a id="back-arrow" href="/"><img src="/assets/img/arrow-back-outline.svg" alt="Arrow to return to the home of the website"/></a>
 
-            <input class="green-input" type="text" name="pseudo" placeholder="Pseudonyme"/>
+            <input class="green-input" type="text" name="email" placeholder="Email"/>
             <input class="blue-input" type="password" name="password" placeholder="Mot de passe"/>
 
             <button id="validate" type="submit">Valider</button>
