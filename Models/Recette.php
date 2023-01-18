@@ -9,14 +9,15 @@ final class Recette extends Model {
 
     public function get3RecettesResume()
     {
-        $O_query = $this->getOConnexion()->query('SELECT `id_Recette`, `nom_Recette`, `difficulte`, `photographie` FROM Recette ORDER BY RAND() LIMIT 3');
+        $O_query = $this->getOConnexion()->prepare('SELECT `id_Recette`, `nom_Recette`, `difficulte`, `photographie` FROM Recette ORDER BY RAND() LIMIT 3');
         $O_query->execute();
+
         return $O_query->fetchAll();
     }
 
     public function getRecetteResumeById(int $I_id) : array
     {
-        $O_query = $this->getOConnexion()->query('SELECT `id_Recette`, `nom_Recette`, `difficulte`, `photographie` FROM `Recette` WHERE `id_Recette` = ?');
+        $O_query = $this->getOConnexion()->prepare('SELECT `id_Recette`, `nom_Recette`, `difficulte`, `photographie` FROM `Recette` WHERE `id_Recette` = ?');
         $O_query->execute(array($I_id));
 
         return $O_query->fetchAll();
@@ -24,7 +25,7 @@ final class Recette extends Model {
 
     public function getAllRecettesResume() : array
     {
-        $O_query = $this->getOConnexion()->query('SELECT `id_Recette`, `nom_Recette`, `difficulte`, `photographie` FROM `Recette`');
+        $O_query = $this->getOConnexion()->prepare('SELECT `id_Recette`, `nom_Recette`, `difficulte`, `photographie` FROM `Recette`');
         $O_query->execute();
 
         return $O_query->fetchAll();
@@ -32,15 +33,14 @@ final class Recette extends Model {
 
     public function getRecetteById(int $I_id) : array
     {
-        $O_query = $this->getOConnexion()->query('SELECT * FROM `Recette` WHERE `id_Recette` = ?');
+        $O_query = $this->getOConnexion()->prepare('SELECT * FROM `Recette` WHERE `id_Recette` = ?');
         $O_query->execute(array($I_id));
         $A_results = $O_query->fetch(PDO::FETCH_ASSOC);
 
-        $O_secondQuery = $this->getOConnexion()->query('SELECT `nom_Ingredient`, `nom_Ustensile`, `nom_Particularite` FROM `Composer`, `Posseder`, `Contenir` WHERE `Composer.id_Recette` = ? AND `Composer.id_Recette` = `Posseder.id_Recette` AND `Posseder.id_Recette` = `Contenir.id_Recette`');
-        $O_secondQuery->execute(array($I_id));
-        $A_secondResults = $O_secondQuery->fetch(PDO::FETCH_ASSOC);
-
-        $appreciations = Appreciation::withIdRecette($I_id);
+        $A_appreciations = new Appreciation();
+        $A_ingredients = new Composer();
+        $A_particularites = new Contenir();
+        $A_ustensiles = new Posseder();
 
         return array(
             'id_Recette' => $A_results['id_Recette'],
@@ -51,10 +51,10 @@ final class Recette extends Model {
             'cout' => $A_results['cout'],
             'description' => $A_results['description'],
             'typeDeCuisson' => $A_results['typeDeCuisson'],
-            'ingredients' => $A_secondResults['nom_Ingredient'],
-            'ustensiles' => $A_secondResults['nom_Ustensile'],
-            'particularites' => $A_secondResults['nom_Particularite'],
-            'appreciations' => $appreciations->getAppreciationByIdRecette(),
+            'ingredients' => $A_ingredients->getIngredientByRecetteId($I_id),
+            'ustensiles' => $A_ustensiles->getUstensileByRecetteId($I_id),
+            'particularites' => $A_particularites->getParticulariteByRecetteId($I_id),
+            'appreciations' => $A_appreciations->getAppreciationByIdRecette($I_id),
             'photographie' => $A_results['photographie']
         );
     }
