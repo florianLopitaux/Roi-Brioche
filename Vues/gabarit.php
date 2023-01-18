@@ -16,11 +16,15 @@
 
     if (sizeof($A_url_param) >= 2) {
         $I_index_page = 1;
+        if ($A_url_param[1] == 'recherche') {
+            echo '<link rel="stylesheet" href="/css/recipe_preview_style.css"/>';
+            $I_index_page = 0;
+        }
     } elseif ($A_url_param[0] == 'index' || $A_url_param[0] == 'recette') {
         echo '<link rel="stylesheet" href="/css/recipe_preview_style.css"/>';
     }
 
-    echo '<link rel="stylesheet" href="css/' . $A_url_param[$I_index_page] . '_style.css"/>';
+    echo '<link rel="stylesheet" href="/css/' . $A_url_param[$I_index_page] . '_style.css"/>';
     ?>
 
 </head>
