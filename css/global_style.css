@@ -133,7 +133,7 @@ header form#search-bar {
     }
 
     header a#login-btn {
-        /*align-self: flex-end;*/
+        align-self: flex-end;
     }
 }
 
