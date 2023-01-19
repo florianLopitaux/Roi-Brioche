@@ -41,7 +41,7 @@ class Utilisateur extends Model
                 $O_query->execute(array($D_date, $S_mail));
                 return 'Aucune erreur';
             } else {
-                return $A_result['mdp'];
+                return 'Mot de passe incorrect';
             }
         } catch (PDOException $e) {
             return $e->getMessage();
