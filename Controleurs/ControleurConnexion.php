@@ -15,15 +15,15 @@ class ControleurConnexion
         $S_email = !empty($A_postParam['email']) ? $A_postParam['email'] : null;
         $S_password = !empty($A_postParam['password']) ? $A_postParam['password'] : null;
 
-        $O_user = new Utilisateur();
-        if ($O_user->checkForUser($S_email, $S_password) == 'Aucune erreur') {
-            $_SESSION['user'] = $S_email;
-            header('Location: /');
-            exit();
+        if ($S_email != null && $S_password != null) {
+            $O_user = new Utilisateur();
+            if ($O_user->checkForUser($S_email, $S_password) == 'Aucune erreur') {
+                $_SESSION['user'] = $S_email;
+                header('Location: /');
+                exit();
+            }
         }
-        else {
-            header('Location: /connexion');
-            exit();
-        }
+        header('Location: /connexion');
+        exit();
     }
 }

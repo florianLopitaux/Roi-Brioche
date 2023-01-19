@@ -19,7 +19,7 @@ class ControleurInscription
         $S_password = !empty($A_postParam['password']) ? $A_postParam['password'] : null;
         $S_check_password = !empty($A_postParam['verif_password']) ? $A_postParam['verif_password'] : null;
 
-        if ($S_password == $S_check_password) {
+        if ($S_password == $S_check_password && $S_pseudo != null && $S_email != null && $S_password != null) {
             $O_user = new Utilisateur();
             if ($O_user->insertUser($S_email, $S_pseudo, password_hash($S_password, PASSWORD_BCRYPT)) != 'Aucune erreur') {
                 header('Location: /inscription');
@@ -28,9 +28,8 @@ class ControleurInscription
                 header('Location: /');
             }
             exit();
-        } else {
-            header('Location: /inscription');
-            exit();
         }
+        header('Location: /inscription');
+        exit();
     }
 }
