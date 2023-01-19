@@ -22,7 +22,7 @@ class ControleurConnexion
             exit();
         }
         else {
-            header('Location: /inscription');
+            header('Location: /connexion');
             exit();
         }
     }
