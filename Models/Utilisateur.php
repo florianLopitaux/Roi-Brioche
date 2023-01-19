@@ -9,7 +9,7 @@ class Utilisateur extends Model
 //        $this->_B_photographie = $B_photographie;
     }
 
-    public function insertUser($S_mail, $S_pseudo, $S_mdp) : string
+    public function insertUser(string $S_mail, string $S_pseudo, string $S_mdp) : string
     {
         $D_date = date("Y-m-d");
 
@@ -24,7 +24,7 @@ class Utilisateur extends Model
         } return 'Aucune erreur';
     }
 
-    public function checkForUser($S_mail, $S_password) : string
+    public function checkForUser(string $S_mail, string $S_password) : string
     {
         $D_date = date("Y-m-d");
 
@@ -46,5 +46,23 @@ class Utilisateur extends Model
         } catch (PDOException $e) {
             return $e->getMessage();
         }
+    }
+
+    public function getUser(string $S_mail) : array
+    {
+        $O_query = $this->getOConnexion()->prepare("SELECT `mail`, `pseudo`, `dateDeCreation`, `dateDeDerniereConnexion`, `photographie` FROM `Utilisateur` WHERE `mail` = ?");
+        $O_query->execute(array($S_mail));
+        $A_results = $O_query->fetch(PDO::FETCH_ASSOC);
+
+        $appreciations = new Appreciation();
+
+        return array(
+            'mail' => $A_results['mail'],
+            'pseudo' => $A_results['pseudo'],
+            'dateDeCreation' => $A_results['dateDeCreation'],
+            'dateDeDerniereConnexion' => $A_results['dateDeDerniereConnexion'],
+            'photographie' => $A_results['photographie'],
+            'appreciations' => $appreciations->getAppreciationByMail($S_mail)
+        );
     }
 }
