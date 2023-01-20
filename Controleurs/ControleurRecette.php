@@ -21,18 +21,18 @@ class ControleurRecette
 
     public function rechercheAction($A_getParam, $A_postParam)
     {
-        if ($A_postParam['search'] == '') {
+        if ($_GET['search'] == '') {
             header('Location: /');
             exit();
         }
 
         $O_recette = new Recette();
-        $A_recettes = $O_recette->getAllRecettesResumeByRecherche($A_postParam['search']);
+        $A_recettes = $O_recette->getAllRecettesResumeByRecherche($_GET['search']);
 
         if (sizeof($A_recettes) == 0) {
             $titre = 'Aucune recette trouvée';
         } else {
-            $titre = 'Résultats pour : "' . $A_postParam['search'] . '"';
+            $titre = 'Résultats pour : "' . $_GET['search'] . '"';
         }
         Vue::montrer('recette/voir', array('allRecettesResume' =>  $A_recettes, 'titre' => $titre));
     }
