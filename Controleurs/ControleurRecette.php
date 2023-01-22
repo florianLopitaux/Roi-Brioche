@@ -2,22 +2,17 @@
 
 class ControleurRecette
 {
-    public function defautAction()
+    public function defautAction($A_getParam, $A_postParam)
     {
         $O_recette = new Recette();
-        $A_recette = $O_recette->getAllRecettesResume();
-        Vue::montrer('recette/voir', array('allRecettesResume' =>  $A_recette, 'titre' => 'Toutes les recettes (' . sizeof($A_recette) . ')'));
-    }
-
-    public function voirAction($A_getParam, $A_postParam)
-    {
         if (sizeof($A_getParam) == 0 or $A_getParam[0] == '') {
-            header('Location: /recette');
-            exit();
+            $A_recette = $O_recette->getAllRecettesResume();
+            Vue::montrer('recette/voir', array('allRecettesResume' =>  $A_recette, 'titre' => 'Toutes les recettes (' . sizeof($A_recette) . ')'));
+        }
+        else {
+            Vue::montrer('recette/recette', array('recette' =>  $O_recette->getRecetteById($A_getParam[0])));
         }
 
-        $O_recette = new Recette();
-        Vue::montrer('recette/recette', array('recette' =>  $O_recette->getRecetteById($A_getParam[0])));
     }
 
     public function rechercheAction($A_getParam, $A_postParam)

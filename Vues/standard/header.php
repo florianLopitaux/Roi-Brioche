@@ -2,7 +2,7 @@
 echo '<header>
     <img id="rolling-pin" src="/assets/img/rolling-pin.svg" alt="Rolling pin 3D image to decoration"/>
 
-        <form action="/recette/recherche" id="search-bar" method=GET>
+        <form action="/recette/" id="search-bar" method=GET>
             <img src="/assets/img/search-sharp.svg" alt="loop image in the search bar for design"/>
             <input type="text" name="search" placeholder="Que cherchez-vous ?"/>
         </form>';
