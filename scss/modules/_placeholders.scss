@@ -1,0 +1,8 @@
+%flex-center {
+    @include basic-flex(center, center);
+}
+
+%full-content-size {
+    width: 100%;
+    height: 100%;
+}
