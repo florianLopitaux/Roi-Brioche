@@ -1,0 +1,14 @@
+main {
+    padding: $vertical-high 0;
+
+    width: 100%;
+
+    @include basic-flex(space-evenly, center);
+    flex-wrap: wrap;
+    gap: $vertical-high;
+
+    h1#title-result {
+        width: 100vw;
+        text-align: center;
+    }
+}
