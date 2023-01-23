@@ -4,7 +4,7 @@ class ControleurProfil
 {
     public function defautAction()
     {
-        if (isset($_SESSION['user'])) {
+        if (isset($_SESSION['user']) || $_SESSION['statut'] == 'administrateur') {
             $O_utilisateur = new Utilisateur();
             $A_utilisateur = $O_utilisateur->getUser($_SESSION['user']);
 
