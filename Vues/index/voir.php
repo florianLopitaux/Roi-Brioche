@@ -22,7 +22,7 @@ echo '      </div>
         <section id="recipes-container">';
 
 for ($indexRecette = 0; $indexRecette < sizeof($A_vue['allRecettesHasard']); ++$indexRecette) {
-    Vue::montrer('standard/recetteResume', array('recette' =>  $A_vue['allRecettesHasard'][$indexRecette]));
+    Vue::montrer('recette/recetteResume', array('recette' =>  $A_vue['allRecettesHasard'][$indexRecette]));
 }
 
 echo ' </section>
