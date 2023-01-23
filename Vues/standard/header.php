@@ -7,5 +7,9 @@ echo '<header>
             <input type="text" name="search" placeholder="Que cherchez-vous ?"/>
         </form>';
 
-if(isset($_SESSION['user'])) echo '<a id="login-btn" class="basic-btn" href="/profil">Profil</a></header>';
+if(isset($_SESSION['user'])) {
+    echo '<div></div>
+    <a id="login-btn" class="basic-btn" href="/deconnexion">Déconnexion</a>';
+    echo '<a id="login-btn" class="basic-btn" href="/profil">Profil</a></header>';
+}
 else echo '<a id="login-btn" class="basic-btn" href="/connexion">Connexion</a></header>';
