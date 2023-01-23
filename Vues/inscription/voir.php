@@ -6,7 +6,7 @@ echo '<img id="logo" class="decorate-img" src="assets/img/logo.png" alt="Logo of
 <main>
     <h1>Créer un compte</h1>
 
-    <form action="/inscription/inscription" method="POST">
+    <form action="/inscription/inscription" method="POST" enctype="multipart/form-data">
         <a id="back-arrow" href="/"><img src="assets/img/arrow-back-outline.svg" alt="Arrow to return to the home of the website"/></a>
         
         <input class="green-input" type="text" name="pseudo" placeholder="Pseudonyme"/>
@@ -25,5 +25,3 @@ echo '<img id="logo" class="decorate-img" src="assets/img/logo.png" alt="Logo of
 </main>
 
 <p id="copyright-text">Copyright © Tous droits réservés Roi Brioche - 2023</p>';
-//TODO Ajout d'un input pour l'image;
-//TODO Demander si l'architecture inscription/voir.php est bonne;
