@@ -11,10 +11,10 @@ class ControleurProfil
             if (sizeof($A_utilisateurs) == 0) {
                 $titre = 'Aucun profil trouvé';
             } else {
-                $titre = 'Profils ( ' . sizeof($A_utilisateurs) . ' )';
+                $titre = 'Profils (' . sizeof($A_utilisateurs) . ')';
             }
 
-            Vue::montrer('profil/voir', array('profils' => $A_utilisateurs, 'titre' => $titre));
+            Vue::montrer('profil/recherche', array('profils' => $A_utilisateurs, 'titre' => $titre));
         }
         elseif (isset($_SESSION['user'])) {
             $this->showUser($_SESSION['user']);
@@ -41,13 +41,6 @@ class ControleurProfil
         $O_utilisateur = new Utilisateur();
         $A_utilisateurs = $O_utilisateur->getUser($mail);
 
-        if (sizeof($A_utilisateurs) == 0) {
-            $titre = 'Aucun profil trouvé';
-        }
-        else {
-            $titre = 'Profils ( ' . sizeof($A_utilisateurs) . ' )';
-        }
-
-        Vue::montrer('profil/voir', array('profil' => $A_utilisateurs, 'titre' => $titre));
+        Vue::montrer('profil/voir', array('profil' => $A_utilisateurs));
     }
 }
