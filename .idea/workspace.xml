@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b26c5f7f-8e7c-4c00-afeb-27db520591ee" name="Changes" comment="Changement du /recette/recherche/?search= par /recette/?search=">
+    <list default="true" id="b26c5f7f-8e7c-4c00-afeb-27db520591ee" name="Changes" comment="workspace.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controleurs/ControleurProfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controleurs/ControleurProfil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controleurs/ControleurRecette.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controleurs/ControleurRecette.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Utilisateur.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Utilisateur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vues/index/voir.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/index/voir.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vues/recette/voir.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/recette/voir.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vues/standard/recetteResume.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/recette/recetteResume.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vues/profil/profilResume.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/profil/profilResume.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,27 +30,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lujes/PhpstormProjects/Project-php/Controleurs&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "last_opened_file_path": "C:/Users/lujes/PhpstormProjects/Project",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lujes\PhpstormProjects\Project-php\Controleurs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lujes\PhpstormProjects\Project-php\Vues\recette" />
       <recent name="C:\Users\lujes\PhpstormProjects\Project-php\Vues\standard" />
     </key>
   </component>
@@ -77,7 +75,7 @@
       <workItem from="1674408739600" duration="2470000" />
       <workItem from="1674496602538" duration="166000" />
       <workItem from="1674496795560" duration="8815000" />
-      <workItem from="1674510086237" duration="368000" />
+      <workItem from="1674510086237" duration="1063000" />
     </task>
     <task id="LOCAL-00001" summary="Suppression de la partie objet">
       <created>1674065745192</created>
@@ -366,7 +364,63 @@
       <option name="project" value="LOCAL" />
       <updated>1674411124101</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Ajout de la recherche de profil et de la visualisation d'un profil si on est admin">
+      <created>1674510622379</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1674510622379</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Changement de Changement du /recette/recherche/?search= par /recette/?search=">
+      <created>1674510646844</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1674510646844</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Ajout du profilResume.php sans css">
+      <created>1674510668436</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1674510668436</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Changement d'emplacement">
+      <created>1674510686359</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1674510686359</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Ajout de la vue recherche pour les profils">
+      <created>1674510729611</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1674510729611</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Ajout d'une requête pour avoir les profils par rapport à leur mail ou leur pseudo">
+      <created>1674510771838</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1674510771838</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Changement d'emplacement">
+      <created>1674510789784</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1674510789784</updated>
+    </task>
+    <task id="LOCAL-00049" summary="workspace.xml">
+      <created>1674510809281</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1674510809281</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,13 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout de la gestion de la connexion" />
-    <MESSAGE value="Modification de la gestion de l'inscription" />
-    <MESSAGE value="Ajout d'un exit()" />
-    <MESSAGE value="Modification de la fonction et suppression de la partie objet" />
-    <MESSAGE value="Modification des requêtes avec prepare et ajout des objets" />
-    <MESSAGE value="Affichage d'une recette par rapport à l'id mais sans le front" />
-    <MESSAGE value="Suppression de la partie objet et ajout de la fonction pour la connexion" />
     <MESSAGE value="ajout de l'action" />
     <MESSAGE value="Ajout de la gestion des recherches" />
     <MESSAGE value="Ajout de la gestion des css pour la page /recette/recherche" />
@@ -409,7 +456,14 @@
     <MESSAGE value="Ajout de la vue pour le profil mais sans la mise en page" />
     <MESSAGE value="Ajout du nombre de recette dans la recherche et dans &quot;toutes les recettes&quot;" />
     <MESSAGE value="Changement du /recette/recherche/?search= par /recette/?search=" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changement du /recette/recherche/?search= par /recette/?search=" />
+    <MESSAGE value="Ajout de la recherche de profil et de la visualisation d'un profil si on est admin" />
+    <MESSAGE value="Changement de Changement du /recette/recherche/?search= par /recette/?search=" />
+    <MESSAGE value="Ajout du profilResume.php sans css" />
+    <MESSAGE value="Ajout de la vue recherche pour les profils" />
+    <MESSAGE value="Ajout d'une requête pour avoir les profils par rapport à leur mail ou leur pseudo" />
+    <MESSAGE value="Changement d'emplacement" />
+    <MESSAGE value="workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
