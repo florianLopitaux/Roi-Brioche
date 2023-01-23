@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b26c5f7f-8e7c-4c00-afeb-27db520591ee" name="Changes" comment="workspace.xml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controleurs/ControleurProfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controleurs/ControleurProfil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vues/profil/profilResume.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/profil/profilResume.php" afterDir="false" />
-    </list>
+    <list default="true" id="b26c5f7f-8e7c-4c00-afeb-27db520591ee" name="Changes" comment="workspace.xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,35 +71,7 @@
       <workItem from="1674408739600" duration="2470000" />
       <workItem from="1674496602538" duration="166000" />
       <workItem from="1674496795560" duration="8815000" />
-      <workItem from="1674510086237" duration="1063000" />
-    </task>
-    <task id="LOCAL-00001" summary="Suppression de la partie objet">
-      <created>1674065745192</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1674065745192</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Passage au Model Recette">
-      <created>1674065835568</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1674065835568</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Ajout de la fonction password_hash() pour le mot de passe">
-      <created>1674065885011</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1674065885011</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Gestion de si c'est le lien est vide (exemple : /recette/voir/ ou /recette/voir)">
-      <created>1674065938522</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1674065938522</updated>
+      <workItem from="1674510086237" duration="1500000" />
     </task>
     <task id="LOCAL-00005" summary="Ajout de &quot;/&quot;">
       <created>1674065986161</created>
@@ -420,7 +388,35 @@
       <option name="project" value="LOCAL" />
       <updated>1674510809281</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Nombre de profils non affiché quand on est sur le sien">
+      <created>1674511435126</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1674511435126</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Changement des noms des variables">
+      <created>1674511453427</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1674511453427</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Suppression du titre">
+      <created>1674511464124</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1674511464125</updated>
+    </task>
+    <task id="LOCAL-00053" summary="workspace.xml">
+      <created>1674511473489</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1674511473489</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,9 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ajout de l'action" />
-    <MESSAGE value="Ajout de la gestion des recherches" />
-    <MESSAGE value="Ajout de la gestion des css pour la page /recette/recherche" />
     <MESSAGE value="Ajout de l'action pour le formulaire" />
     <MESSAGE value="Ajout de la requête pour avoir les résultats de la recherche" />
     <MESSAGE value="Ajout du header et du footer pour la page d'une recette" />
@@ -462,6 +455,9 @@
     <MESSAGE value="Ajout de la vue recherche pour les profils" />
     <MESSAGE value="Ajout d'une requête pour avoir les profils par rapport à leur mail ou leur pseudo" />
     <MESSAGE value="Changement d'emplacement" />
+    <MESSAGE value="Nombre de profils non affiché quand on est sur le sien" />
+    <MESSAGE value="Changement des noms des variables" />
+    <MESSAGE value="Suppression du titre" />
     <MESSAGE value="workspace.xml" />
     <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
   </component>
