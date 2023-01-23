@@ -65,4 +65,12 @@ class Utilisateur extends Model
             'appreciations' => $appreciations->getAppreciationByMail($S_mail)
         );
     }
+
+    public function getUserByNameOrEmail(string $search): array
+    {
+        $O_query = $this->getOConnexion()->prepare("SELECT `mail`, `pseudo`, `photographie` FROM `Utilisateur` WHERE `mail` LIKE ? OR `pseudo` LIKE ?");
+        $O_query->execute(array("%$search%", "%$search%"));
+
+        return $O_query->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
