@@ -2,8 +2,7 @@
 
 Vue::montrer('standard/header');
 
-echo '<link rel="stylesheet" href="/css/voir_style.css"/>
-<main>
+echo '<main>
         <a id="main-recipe" class="recipe" href="/recette/voir/' . $A_vue['recette']['id_Recette'] . '">
             <img src="data:image/jpeg;base64,' . base64_encode($A_vue['recette']['photographie']) . '" alt="image representing the food described by the recipe"/>
             <h3>' . $A_vue['recette']['nom_Recette'] . '</h3>
@@ -78,13 +77,22 @@ echo $A_vue['recette']['description'];
 echo '</section>
         </section>
 
-        <section id="commentaries" class="data-section">
+        <section id="commentaries-section" class="data-section">
             <h3>Commentaires</h3>
 
-            <section id="preparation-list" class="data-list">
-                
-            </section>
-        </section>
+            <button class="basic-btn glass-effect">Ecrire un commentaire</button>';
+
+if ($A_vue['recette']['appreciations'] != null) {
+    echo '<section id="commentary-list">';
+
+    foreach ($A_vue['recette']['appreciations'] as $appreciation) {
+        Vue::montrer('recette/commentPreview', array('appreciation' => $appreciation));
+    }
+
+    echo '</section>';
+}
+
+echo '</section>
     </main>';
 
 Vue::montrer('standard/pied');
