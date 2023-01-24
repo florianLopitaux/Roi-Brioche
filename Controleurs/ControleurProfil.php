@@ -16,6 +16,10 @@ class ControleurProfil
 
             Vue::montrer('profil/recherche', array('profils' => $A_utilisateurs, 'titre' => $titre));
         }
+        elseif ($_SESSION['statut'] == 'utilisateur' && isset($_GET['search']) && $_GET['search'] != '') {
+            header('Location: /profil');
+            exit();
+        }
         elseif (isset($_SESSION['user'])) {
             $this->showUser($_SESSION['user']);
         }
