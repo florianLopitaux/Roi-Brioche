@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b26c5f7f-8e7c-4c00-afeb-27db520591ee" name="Changes" comment="workspace.xml">
-      <change afterPath="$PROJECT_DIR$/Vues/recette/comentPreview.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Appreciation.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Appreciation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vues/recette/recette.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/recette/recette.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/voir_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/voir_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controleurs/ControleurProfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controleurs/ControleurProfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vues/profil/profilResume.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/profil/profilResume.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vues/profil/voir.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/profil/voir.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vues/recette/commentPreview.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/recette/commentPreview.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,42 +87,7 @@
       <workItem from="1674510086237" duration="1500000" />
       <workItem from="1674553052944" duration="1792000" />
       <workItem from="1674574733620" duration="745000" />
-      <workItem from="1674575958808" duration="2072000" />
-    </task>
-    <task id="LOCAL-00010" summary="Ajout de &quot;/&quot;">
-      <created>1674066154592</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1674066154592</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Changement des buttons en balise &lt;a&gt; avec les redirections">
-      <created>1674066190044</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1674066190044</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Suppression fichiers inutiles">
-      <created>1674066219407</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1674066219407</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Modification des requêtes avec prepare">
-      <created>1674072856053</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1674072856053</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Modification de la fonction et suppression de la partie objet">
-      <created>1674072891581</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1674072891581</updated>
+      <workItem from="1674575958808" duration="3476000" />
     </task>
     <task id="LOCAL-00015" summary="Modification de la fonction et suppression de la partie objet">
       <created>1674072902420</created>
@@ -432,7 +397,42 @@
       <option name="project" value="LOCAL" />
       <updated>1674554844559</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Ajout de la photo de profil">
+      <created>1674578458749</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1674578458750</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Vue pour un commentaire">
+      <created>1674578482752</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1674578482752</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Finition de la page sans la fin du css">
+      <created>1674578514547</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1674578514547</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Alignement de la description">
+      <created>1674578536635</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1674578536635</updated>
+    </task>
+    <task id="LOCAL-00063" summary="workspace.xml">
+      <created>1674578546801</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1674578546801</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,10 +450,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Gestion de résultat de la recherche vide" />
-    <MESSAGE value="Ajout de vérification pour accéder à la page de connexion (Si on est déjà connecté, on ne peut pas s'inscrire ni se connecter. C'est juste par logique et non parce que ça ne fonctionne pas)" />
-    <MESSAGE value="Ajout du message d'erreur quand le mot de passe n'est pas bon" />
-    <MESSAGE value="Correction de la redirection" />
     <MESSAGE value="Gestion de si le formulaire n'est pas entièrement rempli" />
     <MESSAGE value="Ajout du controleur pour l'affichage du profil avec une verification de si l'utilisateur est log" />
     <MESSAGE value="Modification de la redirection du bouton profil" />
@@ -474,6 +470,10 @@
     <MESSAGE value="changement en class du formulaire" />
     <MESSAGE value="Début de la page de recette a finir" />
     <MESSAGE value="Changement du nom du fichier (temporaire)" />
+    <MESSAGE value="Ajout de la photo de profil" />
+    <MESSAGE value="Vue pour un commentaire" />
+    <MESSAGE value="Finition de la page sans la fin du css" />
+    <MESSAGE value="Alignement de la description" />
     <MESSAGE value="workspace.xml" />
     <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
   </component>
