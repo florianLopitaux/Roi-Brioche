@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Roi Brioche</title>
+
+    <!-- STYLE FILES -->
+    <link rel="stylesheet" href="/css_compiled/global_style.css">
+    <link rel="stylesheet" href="/css_compiled/recette_detail_style.css">
+    <link rel="stylesheet" href="/css_compiled/recipe_preview_style.css">
+</head>
+
+<body>
+    <header>
+        <img id="rolling-pin" src="/assets/img/rolling-pin.svg" alt="Rolling pin 3D image to decoration"/>
+    
+        <form action="/recette/recherche" id="search-bar" method=GET>
+            <img src="/assets/img/search-sharp.svg" alt="loop image in the search bar for design"/>
+            <input type="text" name="search" placeholder="Que cherchez-vous ?"/>
+        </form>
+
+        <a id="login-btn" class="basic-btn" href="/connexion">Connexion</a>
+    </header>
+
+    <main>
+        <a id="main-recipe" class="recipe" href="/recette/voir/' . $A_vue['recette']['id_Recette'] . '">
+            <img src="data:image/jpeg;base64,' . base64_encode($A_vue['recette']['photographie']) . '" alt="image representing the food described by the recipe"/>
+            <h3>' . $A_vue['recette']['nom_Recette'] . '</h3>
+            <p>Description de la recette</p>
+        </a>
+
+        <section id="recipe-resume">
+            <div id="top-recipe-resume">
+                <i class="star on">★</i>
+                <i class="star on">★</i>
+                <i class="star on">★</i>
+                <i class="star off">★</i>
+                <i class="star off">★</i>
+
+                <span id="commentaries">2 commentaires</span>
+            </div>
+
+            <div id="bottom-recipe-resume">
+                <span class="preparation-data"><strong>Temps de préparation:</strong> 30min</span>
+                <span class="preparation-data"><strong>Difficulté:</strong> facile</span>
+                <span class="preparation-data"><strong>Prix:</strong> Bon marché</span>
+                <span class="preparation-data"><strong>Type de cuisson:</strong> Au four</span>
+                <span class="preparation-data"><strong>Allergies:</strong> Aucune</span>
+            </div>
+        </section>
+
+        <section class="data-section">
+            <h3>Ingrédients</h3>
+
+            <section class="data-list">
+                <span class="recipe-data">415g de <strong>farine</strong></span>
+                <span class="recipe-data">1.5 c.a.c de <strong>levure chimique</strong></span>
+                <span class="recipe-data">2/3 c.a.c de <strong>sel</strong></span>
+                <span class="recipe-data">65g de <strong>sucre en poudre</strong></span>
+                <span class="recipe-data">23cl de <strong>lait</strong></span>
+                <span class="recipe-data">2 <strong>oeufs</strong></span>
+                <span class="recipe-data">50g de <strong>beurre</strong></span>
+                <span class="recipe-data">2/3l <strong>d'huile</strong></span>
+            </section>
+        </section>
+
+        <section class="data-section">
+            <h3>Ustensiles</h3>
+
+            <section class="data-list">
+                <span class="recipe-data">1 <strong>saladier</strong></span>
+                <span class="recipe-data">1 <strong>cuillière</strong></span>
+                <span class="recipe-data">2 <strong>couteau</strong></span>
+                <span class="recipe-data">1 <strong>casserole</strong></span>
+                <span class="recipe-data">1 <strong>pinceau</strong></span>
+                <span class="recipe-data">1 <strong>balance de cuisine</strong></span>
+            </section>
+        </section>
+
+        <section class="data-section">
+            <h3>Préparation</h3>
+
+            <section id="preparation-list" class="data-list">
+                <h4>Etape 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto molestiae adipisci repellat consequatur ducimus? Reiciendis officia sint fugiat obcaecati placeat eum quaerat quia voluptatibus delectus tenetur! Molestias impedit asperiores nobis.</p>
+
+                <h4>Etape 2</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora dolorem consequuntur explicabo a libero mollitia voluptate provident delectus sequi modi laboriosam quod magnam in dolor, cumque nam velit dicta omnis?</p>
+            </section>
+        </section>
+
+        <section id="commentaries" class="data-section">
+            <h3>Commentaires</h3>
+
+            <section id="preparation-list" class="data-list">
+                
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section id="left-container">
+            <img src="/assets/img/logo.png" alt="Logo Roi Brioche"/>
+
+                <section id="left-bottom-box">
+                    <button class="basic-btn">Nous contacter</button>
+
+                    <p>Ce site web est un projet pédagogique réalisé par un groupe d\'étudiants du département d\'informatique de l\'IUT d\'Aix-en-provence. Ce site n\'a donc pas pour objectif d\'être utilisé par une quelconque communauté.
+                    </p>
+                </section>
+        </section>
+
+        <section id="right-container">
+
+        </section>
+
+        <p id="copyright-text">Copyright © Tous droits réservés Roi Brioche - 2023</p>
+    </footer>
+</body>
+</html>
