@@ -1,6 +1,6 @@
 main {
     margin-top: 10vh;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 
     width: 100%;
 
@@ -159,7 +159,7 @@ section#preparation-list {
 }
 
 #preparation-list p {
-    width: 90%;
+    width: 70%;
 }
 
 /*
@@ -178,24 +178,46 @@ section#commentaries-section {
 #commentaries-section section#commentary-list {
     overflow-y: scroll;
 
-    width: 100%;
+    width: 80%;
     height: 80vh;
 
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     gap: 3vh;
 }
 
 #commentary-list section#commentary {
-    width: 75%;
-    height: 25vh;
+    padding: 1vh 1vw;
+
+    width: 74%;
+    height: 24vh;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-flow: column wrap;
+    gap: 5%;
 
     background-color: white;
     border-radius: 2vw;
+}
+
+#commentary img {
+    width: auto;
+    height: 90%;
+}
+
+#commentary h4#profile-name {
+    font-family: 'TT-Norms-Bold';
+}
+
+#commentary div#stars-container {
+    display: flex;
+    gap: 1vw;
+}
+
+#commentary p#comment-text {
+    width: 50%;
+    height: 90%;
 }
