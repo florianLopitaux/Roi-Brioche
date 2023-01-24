@@ -27,6 +27,9 @@
         echo '<link rel="stylesheet" href="/css/recette_style.css"/>';
         echo '<link rel="stylesheet" href="/css/recipe_preview_style.css"/>';
     }
+    if ($A_url_param[0] == 'profil') {
+        echo '<link rel="stylesheet" href="/css/voir_style.css"/>';
+    }
     if ($A_url_param[1] == 'voir') {
         echo '<link rel="stylesheet" href="/css/voir_style.css"/>';
     }
