@@ -161,6 +161,7 @@ section#preparation-list {
 }
 
 #preparation-list p {
+    text-align: center;
     width: 70%;
 }
 
