@@ -76,6 +76,8 @@ div#bottom-recipe-resume {
 span.preparation-data {
     width: 30%;
     height: 45%;
+
+    text-align: center;
 }
 
 /*
