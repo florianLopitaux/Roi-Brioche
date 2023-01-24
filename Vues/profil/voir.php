@@ -2,12 +2,23 @@
 
 Vue::montrer('standard/header');
 
-var_dump($A_vue['profil']);
+Vue::montrer('profil/profilResume', array('profil' => $A_vue['profil']));
 
-echo '<form action="/profil/" class="search-bar" method=GET>
-            <img src="/assets/img/search-sharp.svg" alt="loop image in the search bar for design"/>
-            <input type="text" name="search" placeholder="Que cherchez-vous ?"/>
-        </form>';
+echo '<section id="commentaries-section" class="data-section">
+    <h3>Commentaires</h3>
+
+    <button class="basic-btn glass-effect">Ecrire un commentaire</button>';
+
+if ($A_vue['recette']['appreciations'] != null) {
+    echo '<section id="commentary-list">';
+
+    foreach ($A_vue['recette']['appreciations'] as $appreciation) {
+        Vue::montrer('recette/commentPreview', array('appreciation' => $appreciation));
+    }
+
+    echo '</section>
+    </section>';
+}
 
 Vue::montrer('standard/pied');
 
