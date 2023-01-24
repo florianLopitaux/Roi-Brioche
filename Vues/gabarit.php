@@ -14,14 +14,15 @@
     $A_url_param = explode('/', $A_vue['url']);
     $I_index_page = 0;
 
-    if (sizeof($A_url_param) >= 2 and $A_url_param[1] != '') {
+    if (sizeof($A_url_param) >= 2 and $A_url_param[1] != '' and $A_url_param[1] != 'voir') {
         $I_index_page = 1;
-    } elseif ($A_url_param[0] == 'index' || $A_url_param[0] == 'recette') {
+    } elseif (in_array($A_url_param[0], ['recette', 'utilisateur'])) {
         echo '<link rel="stylesheet" href="/css/recipe_preview_style.css"/>';
     }
 
     echo '<link rel="stylesheet" href="/css/' . $A_url_param[$I_index_page] . '_style.css"/>';
     ?>
+    // TODO faire un switch case
 
 </head>
     <body>
