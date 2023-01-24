@@ -2,7 +2,7 @@
 echo '<section id="commentary">
     <img src="data:image/jpeg;base64,' . base64_encode($A_vue['appreciation']['photographie']) . '" alt="photo de profile de l\'utilisateur">
 
-    <h4 id="profile-name">' . $A_vue['recette']['appreciations'][0]['pseudo'] . '</h4>
+    <h4 id="profile-name">' . $A_vue['appreciation']['pseudo'] . '</h4>
 
     <div id="stars-container">';
 
