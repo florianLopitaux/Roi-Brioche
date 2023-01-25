@@ -177,7 +177,7 @@ section#preparation-list {
  ██████  ██████  ██      ██ ██      ██ ███████ ██   ████    ██    ██   ██ ██   ██ ██ ███████ ███████
 */
 section#commentaries-section {
-    height: 100vh;
+    max-height: 100vh;
 
     gap: 2vh;
 }
@@ -187,7 +187,7 @@ section#commentaries-section {
     overflow-y: auto;
 
     width: 80%;
-    height: 80vh;
+    max-height: 80vh;
 
     display: flex;
     align-items: center;
