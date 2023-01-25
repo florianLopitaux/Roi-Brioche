@@ -67,4 +67,15 @@ final class Recette extends Model {
 
         return $O_query->fetchAll();
     }
+
+    public function deleteRecette(int $I_id) : bool
+    {
+        $O_query = $this->getOConnexion()->prepare('DELETE FROM `Appreciation` WHERE `id_Recette` = ?');
+        $O_query->execute(array($I_id));
+
+        $O_query = $this->getOConnexion()->prepare('DELETE FROM `Recette` WHERE `id_Recette` = ?');
+        $O_query->execute(array($I_id));
+
+        return $O_query->rowCount() > 0;
+    }
 }
