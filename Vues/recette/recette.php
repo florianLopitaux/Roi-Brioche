@@ -78,15 +78,24 @@ echo '</section>
         </section>
 
         <section id="commentaries-section" class="data-section">
-            <h3>Commentaires</h3>
+            <h3>Commentaires</h3>';
 
-            <button class="basic-btn glass-effect">Ecrire un commentaire</button>';
+$B_aDejaCommente = false;
+foreach ($A_vue['recette']['appreciations'] as $appreciation) {
+    if ($appreciation['id_Utilisateur'] == $_SESSION['id']) {
+        $B_aDejaCommente = true;
+        break;
+    }
+}
+if (!$B_aDejaCommente) {
+    echo '<button class="basic-btn glass-effect">Ecrire un commentaire</button>';
+}
 
 if ($A_vue['recette']['appreciations'] != null) {
     echo '<section id="commentary-list">';
 
     foreach ($A_vue['recette']['appreciations'] as $appreciation) {
-        Vue::montrer('recette/commentPreview', array('appreciation' => $appreciation));
+        Vue::montrer('commentaire/commentPreview', array('appreciation' => $appreciation));
     }
 
     echo '</section>';
