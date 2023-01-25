@@ -33,6 +33,9 @@
     if ($A_url_param[1] == 'voir') {
         echo '<link rel="stylesheet" href="/css/recipe_style.css"/>';
     }
+    if ($A_url_param[1] == 'ajout') {
+        echo '<link rel="stylesheet" href="/css/add_comment_style.css"/>';
+    }
     ?>
 
 
