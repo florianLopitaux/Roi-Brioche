@@ -144,7 +144,10 @@ section.data-section {
 ██      ██   ██ ███████ ██      ██   ██     ███████ ███████  ██████    ██    ██  ██████  ██   ████
 */
 section#preparation-list {
+    padding: 5vh 0;
+
     width: 80%;
+    height: fit-content;
 
     display: flex;
     justify-content: center;
