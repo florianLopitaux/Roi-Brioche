@@ -2,14 +2,12 @@
 
 Vue::montrer('standard/header');
 
-echo '<main>
-        <a id="main-recipe" class="recipe" href="/recette/voir/' . $A_vue['recette']['id_Recette'] . '">
-            <img src="data:image/jpeg;base64,' . base64_encode($A_vue['recette']['photographie']) . '" alt="image representing the food described by the recipe"/>
-            <h3>' . $A_vue['recette']['nom_Recette'] . '</h3>
-            <p>Description de la recette</p>
-        </a>
+echo '<main>';
 
-        <section id="recipe-resume">
+Vue::montrer('recette/recetteResume', array('recette' => $A_vue['recette']));
+
+echo '
+    <section id="recipe-resume">
             <div id="top-recipe-resume">';
 
 for ($i = 0; $i < round(floatval($A_vue['recette']['moyenne'])); $i++) {
@@ -88,7 +86,7 @@ foreach ($A_vue['recette']['appreciations'] as $appreciation) {
     }
 }
 if (!$B_aDejaCommente) {
-    echo '<button class="basic-btn glass-effect">Écrire un commentaire</button>';
+    echo '<a class="basic-btn glass-effect" href="/commentaire/ajout/' . $A_vue['recette']['id_Recette'] . '">Écrire un commentaire</a>';
 }
 
 if ($A_vue['recette']['appreciations'] != null) {
