@@ -73,4 +73,15 @@ class Utilisateur extends Model
 
         return $O_query->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function deleteUtilisateur(string $S_mail) : bool
+    {
+        $O_query = $this->getOConnexion()->prepare("DELETE FROM `Appreciation` WHERE `mail` = ?");
+        $O_query->execute(array($S_mail));
+
+        $O_query = $this->getOConnexion()->prepare("DELETE FROM `Utilisateur` WHERE `mail` = ?");
+        $O_query->execute(array($S_mail));
+
+        return $O_query->rowCount() > 0;
+    }
 }
