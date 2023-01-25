@@ -12,7 +12,7 @@ if ($A_vue['recette']['appreciations'] != null) {
     echo '<section id="commentary-list">';
 
     foreach ($A_vue['recette']['appreciations'] as $appreciation) {
-        Vue::montrer('recette/commentPreview', array('appreciation' => $appreciation));
+        Vue::montrer('commentaire/commentPreview', array('appreciation' => $appreciation));
     }
 
     echo '</section>
