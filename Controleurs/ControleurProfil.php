@@ -40,6 +40,20 @@ class ControleurProfil
         }
     }
 
+    public function supprimerAction($A_getParam, $A_postParam)
+    {
+        if ($_SESSION['statut'] == 'administrateur' && isset($A_getParam[0]) && $A_getParam[0] != '') {
+            $O_utilisateur = new Utilisateur();
+            $O_utilisateur->deleteUtilisateur($A_getParam[0]);
+            header('Location: /profil');
+            exit();
+        }
+        else {
+            header('Location: /profil');
+            exit();
+        }
+    }
+
     public function showUser(string $mail): void
     {
         $O_utilisateur = new Utilisateur();
