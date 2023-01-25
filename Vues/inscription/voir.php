@@ -1,5 +1,6 @@
 <?php
-echo '<img id="logo" class="decorate-img" src="assets/img/logo.png" alt="Logo of the website : Roi Brioche"/>
+echo
+'<img id="logo" class="decorate-img" src="assets/img/logo.png" alt="Logo of the website : Roi Brioche"/>
 <img id="cookies" class="decorate-img" src="assets/img/cookies.png" alt="Decoration image representing three cookies"/>
 <img id="donut" class="decorate-img" src="assets/img/donut.png" alt="Decoration image representing a donut"/>
 
