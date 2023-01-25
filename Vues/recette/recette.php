@@ -88,7 +88,7 @@ foreach ($A_vue['recette']['appreciations'] as $appreciation) {
     }
 }
 if (!$B_aDejaCommente) {
-    echo '<button class="basic-btn glass-effect">Ecrire un commentaire</button>';
+    echo '<button class="basic-btn glass-effect">Écrire un commentaire</button>';
 }
 
 if ($A_vue['recette']['appreciations'] != null) {
