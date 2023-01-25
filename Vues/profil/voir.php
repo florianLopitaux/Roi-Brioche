@@ -5,8 +5,7 @@ Vue::montrer('standard/header');
 Vue::montrer('profil/profilResume', array('profil' => $A_vue['profil']));
 
 echo '<section id="commentaries-section" class="data-section">
-        <h3>Commentaires</h3>
-        <button class="basic-btn glass-effect">Ecrire un commentaire</button>';
+        <h3>Tes commentaires</h3>';
 
 if ($A_vue['recette']['appreciations'] != null) {
     echo '<section id="commentary-list">';
