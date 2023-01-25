@@ -1,0 +1,165 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body p {
+    position: absolute;
+    bottom: 1vh;
+
+    font-family: 'TT-Norms-Bold';
+    text-align: center;
+}
+
+body main {
+    position: relative;
+
+    width: 80%;
+    height: fit-content;
+    min-height: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+
+    background-color: #fff;
+    border-radius: 3vh;
+}
+
+main h1 {
+    font-family: 'TT-Norms-Bold';
+}
+
+main span#text-to-register {
+    max-width: 80%;
+    text-align: center;
+}
+
+span#text-to-register a {
+    text-decoration: none;
+    font-family: 'TT-Norms-Bold';
+    color: cornflowerblue;
+}
+
+/*
+██ ███    ███  ██████      ██████  ███████  ██████  ██████
+██ ████  ████ ██           ██   ██ ██      ██      ██    ██
+██ ██ ████ ██ ██   ███     ██   ██ █████   ██      ██    ██
+██ ██  ██  ██ ██    ██     ██   ██ ██      ██      ██    ██
+██ ██      ██  ██████      ██████  ███████  ██████  ██████
+*/
+body img.decorate-img {
+    position: absolute;
+}
+
+img#logo {
+    top: 1.5vh;
+    left: 3vw;
+
+    width: auto;
+    height: 9vh;
+}
+
+img#cookies {
+    z-index: 1;
+
+    top: 0;
+    right: 0;
+
+    width: 25vw;
+    height: auto;
+}
+
+img#donut {
+    bottom: 7vh;
+    left: 1vw;
+
+    width: 17vw;
+    height: auto;
+}
+
+/*
+███████  ██████  ██████  ███    ███
+██      ██    ██ ██   ██ ████  ████
+█████   ██    ██ ██████  ██ ████ ██
+██      ██    ██ ██   ██ ██  ██  ██
+██       ██████  ██   ██ ██      ██
+*/
+main form {
+    overflow-x: hidden;
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+form a {
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+
+    width: auto;
+    height: 4vh;
+}
+
+a img {
+    width: 100%;
+    height: 100%;
+
+    color: black;
+}
+
+form > input {
+    padding: .5vh 1vw;
+
+    text-align: center;
+    font-family: 'TT-Norms-ExtraBold';
+    font-size: x-large;
+    color: #fff;
+    border: 0;
+}
+
+form button#validate {
+    cursor: pointer;
+    padding: 1vh 8vw;
+
+    display: inline-block;
+
+    background-color: #ED7bA5;
+    border: 1px solid #ED7bA5;
+    border-radius: 28px;
+
+    text-decoration: none;
+    color: #fff;
+    font-family: 'TT-Norms-Bold';
+    font-size: 16px;
+}
+
+@media screen and (min-width: 840px) {
+    img#logo {
+        height: 14vh;
+    }
+
+    img#donut {
+        bottom: 1.5vh;
+    }
+
+    body main {
+        width: 60%;
+    }
+
+    main form {
+        width: auto;
+        gap: 3vh;
+    }
+
+    form button#validate {
+        padding: 1vh 4vw;
+    }
+}
