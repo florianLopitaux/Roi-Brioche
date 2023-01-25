@@ -124,17 +124,17 @@ section.data-section {
     min-height: 40vh;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3vw;
 
     background-color: white;
     border-radius: 2vw;
 }
 
 .data-list span.recipe-data {
-    width: 15%;
+    width: 18%;
+    text-align: center;
 }
 
 /*
