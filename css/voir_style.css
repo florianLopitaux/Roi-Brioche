@@ -183,6 +183,7 @@ section#commentaries-section {
 }
 
 #commentaries-section section#commentary-list {
+    overflow-x: hidden;
     overflow-y: auto;
 
     width: 80%;
@@ -195,6 +196,7 @@ section#commentaries-section {
 }
 
 #commentary-list section#commentary {
+    position: relative;
     padding: 1vh 1vw;
 
     width: 74%;
@@ -208,6 +210,18 @@ section#commentaries-section {
 
     background-color: white;
     border-radius: 2vw;
+}
+
+#commentary button#delete-btn {
+    cursor: pointer;
+
+    position: absolute;
+    top: .5vh;
+    right: 1vw;
+
+    outline: none;
+    background: transparent;
+    border: 0;
 }
 
 #commentary img {

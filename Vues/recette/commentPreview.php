@@ -1,7 +1,9 @@
 <?php
-echo '<section id="commentary">
-    <img src="data:image/jpeg;base64,' . base64_encode($A_vue['appreciation']['photographie']) . '" alt="photo de profile de l\'utilisateur">
+echo
+'<section id="commentary">
+    <button id="delete-btn">❌</button>
 
+    <img src="data:image/jpeg;base64,' . base64_encode($A_vue['appreciation']['photographie']) . '" alt="photo de profile de l\'utilisateur">
     <h4 id="profile-name">' . $A_vue['appreciation']['pseudo'] . '</h4>
 
     <div id="stars-container">';
@@ -13,9 +15,9 @@ for ($i = 0; $i < 5 - intval($A_vue['appreciation']['note']); $i++) {
     echo '<i class="star off">★</i>';
 }
 
-echo '</div>
+echo
+    '</div>
 
     <span id="date">' . $A_vue['appreciation']['dateDeCreation'] . '</span>
-
     <p id="comment-text">' . $A_vue['appreciation']['commentaire'] . '</p>
 </section>';
