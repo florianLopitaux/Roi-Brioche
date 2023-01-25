@@ -120,7 +120,8 @@ section.data-section {
 
 .data-section section.data-list {
     width: 80%;
-    height: 50vh;
+    height: fit-content;
+    min-height: 40vh;
 
     display: flex;
     justify-content: center;
@@ -182,7 +183,7 @@ section#commentaries-section {
 }
 
 #commentaries-section section#commentary-list {
-    overflow-y: scroll;
+    overflow-y: auto;
 
     width: 80%;
     height: 80vh;
