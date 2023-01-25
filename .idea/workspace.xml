@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26c5f7f-8e7c-4c00-afeb-27db520591ee" name="Changes" comment="workspace.xml">
+    <list default="true" id="b26c5f7f-8e7c-4c00-afeb-27db520591ee" name="Changes" comment="Ajout de la fonction addAppreciation">
+      <change afterPath="$PROJECT_DIR$/Controleurs/ControleurCommentaire.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controleurs/ControleurProfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controleurs/ControleurProfil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vues/gabarit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/gabarit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vues/profil/profilResume.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/profil/profilResume.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vues/profil/voir.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/profil/voir.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vues/recette/commentPreview.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/recette/commentPreview.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vues/recette/recette.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/recette/recette.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,31 +36,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "last_opened_file_path": "C:/Users/lujes/PhpstormProjects/Project-php/css",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lujes\PhpstormProjects\Project-php\css" />
       <recent name="C:\Users\lujes\PhpstormProjects\Project-php\Controleurs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lujes\PhpstormProjects\Project-php\Vues\commentaire" />
       <recent name="C:\Users\lujes\PhpstormProjects\Project-php\Vues\recette" />
       <recent name="C:\Users\lujes\PhpstormProjects\Project-php\Vues\standard" />
     </key>
@@ -87,91 +90,9 @@
       <workItem from="1674510086237" duration="1500000" />
       <workItem from="1674553052944" duration="1792000" />
       <workItem from="1674574733620" duration="745000" />
-      <workItem from="1674575958808" duration="3476000" />
-    </task>
-    <task id="LOCAL-00015" summary="Modification de la fonction et suppression de la partie objet">
-      <created>1674072902420</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1674072902420</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Ajout de la gestion de la connexion">
-      <created>1674072922821</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1674072922821</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Modification de la gestion de l'inscription">
-      <created>1674072945791</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1674072945791</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Ajout d'un exit()">
-      <created>1674072959535</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1674072959535</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Modification de la fonction et suppression de la partie objet">
-      <created>1674072968847</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1674072968847</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Modification des requêtes avec prepare et ajout des objets">
-      <created>1674073131265</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1674073131265</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Affichage d'une recette par rapport à l'id mais sans le front">
-      <created>1674073161113</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1674073161113</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Suppression de la partie objet et ajout de la fonction pour la connexion">
-      <created>1674073188111</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1674073188111</updated>
-    </task>
-    <task id="LOCAL-00023" summary="ajout de l'action">
-      <created>1674073201337</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1674073201337</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Ajout de la gestion des recherches">
-      <created>1674080113442</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1674080113442</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Ajout de la gestion des css pour la page /recette/recherche">
-      <created>1674080174032</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1674080174032</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Ajout de l'action pour le formulaire">
-      <created>1674080188086</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1674080188086</updated>
+      <workItem from="1674575958808" duration="3854000" />
+      <workItem from="1674672359491" duration="2474000" />
+      <workItem from="1674675534624" duration="10228000" />
     </task>
     <task id="LOCAL-00027" summary="Ajout de la requête pour avoir les résultats de la recherche">
       <created>1674080222399</created>
@@ -432,7 +353,91 @@
       <option name="project" value="LOCAL" />
       <updated>1674578546801</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Changement d'un nom d'array">
+      <created>1674579960881</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1674579960881</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Ajout du cas où l'utilisateur met une recherche en lien en n'étant pas admin">
+      <created>1674580003064</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1674580003064</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Ajout du css pour le profil">
+      <created>1674580023461</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1674580023461</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Début de preview du profil">
+      <created>1674580046349</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1674580046349</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Début de la vue du profil">
+      <created>1674580075989</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1674580075989</updated>
+    </task>
+    <task id="LOCAL-00069" summary="workspace.xml">
+      <created>1674580081448</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1674580081448</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Correction d'un peu de css">
+      <created>1674672911116</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1674672911116</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Changement du nom d'un css">
+      <created>1674676740517</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1674676740517</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Suppression du bouton &quot;Ecrire un commentaire&quot; sur la page de profil">
+      <created>1674676857127</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1674676857127</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Faute d'orthographe">
+      <created>1674676899052</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1674676899052</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Début de la page d'ajout de commentaires">
+      <created>1674686244376</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1674686244376</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Ajout de la fonction addAppreciation">
+      <created>1674686279407</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1674686279407</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,17 +455,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Gestion de si le formulaire n'est pas entièrement rempli" />
-    <MESSAGE value="Ajout du controleur pour l'affichage du profil avec une verification de si l'utilisateur est log" />
-    <MESSAGE value="Modification de la redirection du bouton profil" />
-    <MESSAGE value="Ajout de la fonction qui permet d'avoir les informations sur l'utilisateur et toutes ses appréciations" />
-    <MESSAGE value="Ajout de la vue pour le profil mais sans la mise en page" />
-    <MESSAGE value="Ajout du nombre de recette dans la recherche et dans &quot;toutes les recettes&quot;" />
-    <MESSAGE value="Changement du /recette/recherche/?search= par /recette/?search=" />
-    <MESSAGE value="Ajout de la recherche de profil et de la visualisation d'un profil si on est admin" />
-    <MESSAGE value="Changement de Changement du /recette/recherche/?search= par /recette/?search=" />
-    <MESSAGE value="Ajout du profilResume.php sans css" />
-    <MESSAGE value="Ajout de la vue recherche pour les profils" />
     <MESSAGE value="Ajout d'une requête pour avoir les profils par rapport à leur mail ou leur pseudo" />
     <MESSAGE value="Changement d'emplacement" />
     <MESSAGE value="Nombre de profils non affiché quand on est sur le sien" />
@@ -474,8 +468,19 @@
     <MESSAGE value="Vue pour un commentaire" />
     <MESSAGE value="Finition de la page sans la fin du css" />
     <MESSAGE value="Alignement de la description" />
+    <MESSAGE value="Changement d'un nom d'array" />
+    <MESSAGE value="Ajout du cas où l'utilisateur met une recherche en lien en n'étant pas admin" />
+    <MESSAGE value="Ajout du css pour le profil" />
+    <MESSAGE value="Début de preview du profil" />
+    <MESSAGE value="Début de la vue du profil" />
     <MESSAGE value="workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
+    <MESSAGE value="Correction d'un peu de css" />
+    <MESSAGE value="Changement du nom d'un css" />
+    <MESSAGE value="Suppression du bouton &quot;Ecrire un commentaire&quot; sur la page de profil" />
+    <MESSAGE value="Faute d'orthographe" />
+    <MESSAGE value="Début de la page d'ajout de commentaires" />
+    <MESSAGE value="Ajout de la fonction addAppreciation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la fonction addAppreciation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
