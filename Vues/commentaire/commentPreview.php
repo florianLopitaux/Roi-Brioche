@@ -1,8 +1,12 @@
 <?php
 echo
-'<section id="commentary">
-    <button id="delete-btn">❌</button>
+'<section id="commentary">';
 
+if ($_SESSION['statut'] == 'administrateur') {
+    echo '<button id="delete-btn">Supprimer</button>';
+}
+
+echo '
     <img src="data:image/jpeg;base64,' . base64_encode($A_vue['appreciation']['photographie']) . '" alt="photo de profile de l\'utilisateur">
     <h4 id="profile-name">' . $A_vue['appreciation']['pseudo'] . '</h4>
 
