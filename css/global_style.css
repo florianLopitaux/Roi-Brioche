@@ -82,7 +82,7 @@ header img#rolling-pin {
     display: none;
 }
 
-header form#search-bar {
+header form.search-bar {
     padding: 0 1vw;
 
     width: 60%;
@@ -97,7 +97,7 @@ header form#search-bar {
     border-radius: 5vw;
 }
 
-#search-bar input {
+.search-bar input {
     width: max-content;
     height: 100%;
 
@@ -108,11 +108,11 @@ header form#search-bar {
     font-family: 'TT-Norms-Bold';
 }
 
-#search-bar input::placeholder {
+.search-bar input::placeholder {
     font-family: 'TT-Norms-Light';
 }
 
-#search-bar img {
+.search-bar img {
     height: 70%;
 }
 
@@ -123,17 +123,11 @@ header form#search-bar {
 
     header img#rolling-pin {
         display: flex;
-        align-self: flex-end;
-
         height: 50%;
     }
 
-    header form#search-bar {
+    header form.search-bar {
         width: 35%;
-    }
-
-    header a#login-btn {
-        align-self: flex-end;
     }
 }
 
