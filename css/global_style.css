@@ -117,11 +117,10 @@ header form.search-bar {
 }
 
 header div#header-btn-container {
-    width: 30%;
     height: 100%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
 }
