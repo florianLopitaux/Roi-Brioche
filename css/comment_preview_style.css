@@ -29,7 +29,7 @@ section#commentaries-section {
     gap: 3vh;
 }
 
-#commentary-list section#commentary {
+#commentary-list section.commentary {
     position: relative;
     padding: 1vh 1vw;
 
@@ -47,7 +47,7 @@ section#commentaries-section {
     cursor: pointer;
 }
 
-#commentary a#delete-btn {
+.commentary a.delete-btn {
     cursor: pointer;
 
     position: absolute;
@@ -60,16 +60,16 @@ section#commentaries-section {
     border: 0;
 }
 
-#commentary img {
+.commentary img {
     width: auto;
     height: 90%;
 }
 
-#commentary h4#profile-name {
+.commentary h4.profile-name {
     font-family: 'TT-Norms-Bold';
 }
 
-#commentary div#stars-container {
+.commentary div.stars-container {
     display: flex;
     gap: 1vw;
 }
@@ -86,7 +86,7 @@ i.star.off {
     color: grey;
 }
 
-#commentary p#comment-text {
+.commentary p.comment-text {
     width: 50%;
     height: 90%;
 }
