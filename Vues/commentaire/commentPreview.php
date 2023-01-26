@@ -1,5 +1,5 @@
 <?php
-echo '<div id="commentary" onclick=location.href="/recette/detail/' . $A_vue['appreciation']['id_Recette'] . '">';
+echo '<section id="commentary" onclick=location.href="/recette/detail/' . $A_vue['appreciation']['id_Recette'] . '">';
 
 if ($_SESSION['statut'] == 'administrateur' || $_SESSION['user'] == $A_vue['appreciation']['mail']) {
     echo '<a id="delete-btn" href="/commentaire/supprimer/' . $A_vue['appreciation']['id_Recette'] . '">❌</a>';
@@ -23,4 +23,4 @@ echo
 
     <span id="date">' . $A_vue['appreciation']['dateDeCreation'] . '</span>
     <p id="comment-text">' . $A_vue['appreciation']['commentaire'] . '</p>
-</div>';
+</section>';

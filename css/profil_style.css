@@ -8,8 +8,9 @@ main {
     flex-direction: column;
 }
 
-main a.user {
+main section.user {
     cursor: pointer;
+    position: relative;
     margin-bottom: 5vh;
 
     width: 80%;
@@ -64,17 +65,26 @@ main a.user {
     font-family: 'TT-Norms-Bold';
 }
 
+.user a#delete-link {
+    position: absolute;
+    top: 1vh;
+    right: 2vw;
+
+    outline: none;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 750px) {
-    main a.user {
+    main section.user {
         flex-direction: column;
     }
 
-    a.user img {
+    .user img {
         width: auto;
         height: 30%;
     }
 
-    a.user div#profil-data-container {
+    .user div#profil-data-container {
         width: 90%;
         height: fit-content;
         min-height: 30%;
