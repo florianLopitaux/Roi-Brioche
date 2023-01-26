@@ -5,13 +5,13 @@ Vue::montrer('standard/header');
 Vue::montrer('profil/profilResume', array('profil' => $A_vue['profil']));
 
 echo '<section id="commentaries-section" class="data-section">
-        <h3>Tes commentaires</h3>';
+        <h3>Tes commentaires (' . sizeof($A_vue['profil']['apprecations']) . ')</h3>';
 
-if ($A_vue['recette']['appreciations'] != null) {
+if ($A_vue['profil']['appreciations'] != null) {
     echo '<section id="commentary-list">';
 
-    foreach ($A_vue['recette']['appreciations'] as $appreciation) {
-        Vue::montrer('commentaire/commentPreview', array('appreciation' => $appreciation));
+    foreach ($A_vue['profil']['appreciations'] as $appreciation) {
+        Vue::montrer('commentaire/commentPreview', array('appreciation' => $appreciation, 'recette' => false));
     }
 
     echo '</section>
