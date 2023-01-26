@@ -1,13 +1,24 @@
 <?php
 
+/**
+ * Classe qui gère les interactions avec la table Recette
+ */
 final class Recette extends Model {
 
+    /**
+     * Constructeur de la classe
+     */
     public function __construct()
     {
         parent::__construct();
     }
 
-    public function get3RecettesResume()
+    /**
+     * Fonction qui permet d'avoir 3 recettes aléatoires en résumé
+     *
+     * @return array : tableau contenant les 3 recettes aléatoires
+     */
+    public function get3RecettesResume() : array
     {
         $O_query = $this->getOConnexion()->prepare('SELECT `id_Recette`, `nom_Recette`, `difficulte`, `photographie` FROM Recette ORDER BY RAND() LIMIT 3');
         $O_query->execute();
@@ -15,14 +26,11 @@ final class Recette extends Model {
         return $O_query->fetchAll();
     }
 
-    public function getRecetteResumeById(int $I_id) : array
-    {
-        $O_query = $this->getOConnexion()->prepare('SELECT `id_Recette`, `nom_Recette`, `difficulte`, `photographie` FROM `Recette` WHERE `id_Recette` = ?');
-        $O_query->execute(array($I_id));
-
-        return $O_query->fetchAll();
-    }
-
+    /**
+     * Fonction qui permet d'avoir toutes les recettes en résumé
+     *
+     * @return array : tableau contenant toutes les recettes
+     */
     public function getAllRecettesResume() : array
     {
         $O_query = $this->getOConnexion()->prepare('SELECT `id_Recette`, `nom_Recette`, `difficulte`, `photographie` FROM `Recette`');
@@ -31,6 +39,12 @@ final class Recette extends Model {
         return $O_query->fetchAll();
     }
 
+    /**
+     * Fonction qui permet d'avoir une recette en détail
+     *
+     * @param int $I_id : id de la recette
+     * @return array : tableau contenant la recette
+     */
     public function getRecetteById(int $I_id) : array
     {
         $O_query = $this->getOConnexion()->prepare('SELECT * FROM `Recette` WHERE `id_Recette` = ?');
@@ -59,8 +73,13 @@ final class Recette extends Model {
         );
     }
 
-    // This function is used to search for recipes that match the search string
-    public function getAllRecettesResumeByRecherche(string $S_recherche)
+    /**
+     * Fonction qui permet d'avoir toutes les recettes en résumé par recherche
+     *
+     * @param string $S_recherche : recherche
+     * @return array : tableau contenant toutes les recettes
+     */
+    public function getAllRecettesResumeByRecherche(string $S_recherche) : array
     {
         $O_query = $this->getOConnexion()->prepare('SELECT `id_Recette`, `nom_Recette`, `difficulte`, `photographie` FROM `Recette` WHERE `nom_Recette` LIKE ?');
         $O_query->execute(array('%' . $S_recherche . '%'));
@@ -68,13 +87,19 @@ final class Recette extends Model {
         return $O_query->fetchAll();
     }
 
-    public function deleteRecette(int $I_id) : bool
+    /**
+     * Fonction qui permet de supprimer une recette
+     *
+     * @param int $I_id_Recette : id de la recette
+     * @return bool : true si la suppression a réussi, false sinon
+     */
+    public function deleteRecette(int $I_id_Recette) : bool
     {
         $O_query = $this->getOConnexion()->prepare('DELETE FROM `Appreciation` WHERE `id_Recette` = ?');
-        $O_query->execute(array($I_id));
+        $O_query->execute(array($I_id_Recette));
 
         $O_query = $this->getOConnexion()->prepare('DELETE FROM `Recette` WHERE `id_Recette` = ?');
-        $O_query->execute(array($I_id));
+        $O_query->execute(array($I_id_Recette));
 
         return $O_query->rowCount() > 0;
     }
