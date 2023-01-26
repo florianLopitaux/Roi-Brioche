@@ -78,7 +78,7 @@ body header {
     align-items: center;
 }
 
-header img#rolling-pin {
+header a#back-home {
     display: none;
 }
 
@@ -130,10 +130,14 @@ header div#header-btn-container {
         justify-content: space-around;
     }
 
-    header img#rolling-pin {
+    header a#back-home {
         display: flex;
 
         height: 50%;
+    }
+
+    a#back-home img#rolling-pin {
+        height: 100%;
     }
 
     header form.search-bar {

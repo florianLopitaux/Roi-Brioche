@@ -1,7 +1,9 @@
 <?php
 echo
     '<header>
-        <img id="rolling-pin" src="/assets/img/rolling-pin.svg" alt="Rolling pin 3D image to decoration"/>
+        <a id="back-home" href="/">
+            <img id="rolling-pin" src="/assets/img/rolling-pin.svg" alt="Rolling pin 3D image to decoration"/>
+        </a>
 
         <form action="/recette/" class="search-bar" method=GET>
             <img src="/assets/img/search-sharp.svg" alt="loop image in the search bar for design"/>
