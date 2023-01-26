@@ -9,14 +9,9 @@ echo
             <h1>Le site de pâtisserie<br><strong>par référence</strong></h1>
 
             <div id="btn-container">
-                <a id="create-recipe-btn" class="basic-btn" href="/recette">Voir toutes les recettes</a>';
-
-if ($_SESSION['statut'] == 'administrateur') {
-    echo '<a id="categories-btn" class="basic-btn glass-effect" href="/">Créer une recette</a>';
-}
-
-echo
-            '</div>
+                <a id="create-recipe-btn" class="basic-btn" href="/recette">Voir toutes les recettes</a>
+                <a id="categories-btn" class="basic-btn glass-effect" href="/">Créer une recette</a>
+            </div>
         </section>
 
         <img src="assets/img/3D-logo-with-hand.svg" alt="decoration image representing a hand with the website logo above"/>
