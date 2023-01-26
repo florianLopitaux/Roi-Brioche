@@ -5,7 +5,7 @@ Vue::montrer('standard/header');
 Vue::montrer('profil/profilResume', array('profil' => $A_vue['profil']));
 
 echo '<section id="commentaries-section" class="data-section">
-        <h3>Tes commentaires (' . sizeof($A_vue['profil']['apprecations']) . ')</h3>';
+        <h3>Tes commentaires (' . sizeof($A_vue['profil']['appreciations']) . ')</h3>';
 
 if ($A_vue['profil']['appreciations'] != null) {
     echo '<section id="commentary-list">';

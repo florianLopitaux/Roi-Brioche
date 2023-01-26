@@ -215,16 +215,16 @@ section#commentaries-section {
 
 #commentary a#delete-btn {
     cursor: pointer;
-    color: black;
 
     position: absolute;
     top: .5vh;
     right: 1vw;
 
     outline: none;
+    text-decoration: none;
     background: transparent;
     border: 0;
-    text-decoration: none;
+    color: red;
 }
 
 #commentary img {
