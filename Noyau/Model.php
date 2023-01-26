@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Classe qui gère les interactions avec la base de données
+ *
+ * @package Noyau
+ */
 class Model
 {
     private $_A_config;
@@ -7,7 +12,7 @@ class Model
     private $BASE_DE_DONNEES = 'roibrioche_bd';
 
     /**
-     * Constructor de la class
+     * Constructor de la class, permet de se connecter à la base de données
      *
      */
     public function __construct()
