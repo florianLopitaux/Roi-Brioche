@@ -1,7 +1,7 @@
 <?php
 echo
     '<header>
-        <a id="back-home" href="/">
+        <a id="header-back-home" href="/">
             <img id="rolling-pin" src="/assets/img/rolling-pin.svg" alt="Rolling pin 3D image to decoration"/>
         </a>
 

@@ -2,7 +2,9 @@
 echo
     '<footer>
         <section id="left-container">
-            <img src="/assets/img/logo.png" alt="Logo Roi Brioche"/>
+            <a id="footer-back-home" href="/">
+                <img src="/assets/img/logo.png" alt="Logo Roi Brioche"/>
+            </a>
 
             <section id="left-bottom-box">
                 <button class="basic-btn">Nous contacter</button>
