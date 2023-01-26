@@ -17,7 +17,7 @@ for ($i = 0; $i < 5 - round(floatval($A_vue['recette']['moyenne'])); $i++) {
     echo '<i class="star off">★</i>';
 }
 
-echo '<span id="commentaries">' . sizeof($A_vue['recette']['appreciations']) . ' commentaires</span>
+echo '<a id="commentaries" href="#commentaries-section">' . sizeof($A_vue['recette']['appreciations']) . ' commentaires</a>
             </div>
 
             <div id="bottom-recipe-resume">
@@ -80,7 +80,7 @@ echo '</section>
 
 $B_aDejaCommente = false;
 foreach ($A_vue['recette']['appreciations'] as $appreciation) {
-    if ($appreciation['id_Utilisateur'] == $_SESSION['id']) {
+    if ($appreciation['mail'] == $_SESSION['user']) {
         $B_aDejaCommente = true;
         break;
     }
@@ -93,7 +93,7 @@ if ($A_vue['recette']['appreciations'] != null) {
     echo '<section id="commentary-list">';
 
     foreach ($A_vue['recette']['appreciations'] as $appreciation) {
-        Vue::montrer('commentaire/commentPreview', array('appreciation' => $appreciation));
+        Vue::montrer('commentaire/commentPreview', array('appreciation' => $appreciation, 'recette' => true));
     }
 
     echo '</section>';
