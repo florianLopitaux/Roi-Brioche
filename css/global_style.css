@@ -98,7 +98,7 @@ header form.search-bar {
 }
 
 .search-bar input {
-    width: max-content;
+    width: 80%;
     height: 100%;
 
     background-color: transparent;
