@@ -12,7 +12,7 @@ echo
     
             <div>
                 <label>Note</label>
-                <input type="range" name="note" min="1" max="5" value="3" step="1" oninput="this.nextElementSibling.value = this.value">
+                <input type="range" name="note" min="0" max="5" value="3" step="1" oninput="this.nextElementSibling.value = this.value">
                 <output>3</output>
             </div>
             

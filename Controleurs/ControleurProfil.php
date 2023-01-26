@@ -26,8 +26,6 @@ class ControleurProfil
 
     public function supprimerAction($A_getParam, $A_postParam)
     {
-        var_dump($A_getParam);
-        exit();
         if ($_SESSION['statut'] == 'administrateur' && isset($A_getParam) && $A_getParam[0] != '') {
             $O_utilisateur = new Utilisateur();
             $O_utilisateur->deleteUtilisateur($A_getParam[0]);
