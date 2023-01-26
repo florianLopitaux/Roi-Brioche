@@ -17,7 +17,7 @@ echo
         <input class="blue-input" type="password" name="verif_password" placeholder="Vérification du mot de passe"/>
         
         <div id="upload-container">
-            <label for="pp_image">Choisir la photo de profile</label>
+            <label for="pp_image">Choisir la photo de profile (400x400)</label>
             <input id="upload_pp" type="file" name="photographie" accept=".jpg, .jpeg, .png"/>
         </div>
 

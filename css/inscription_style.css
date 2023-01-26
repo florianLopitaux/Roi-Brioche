@@ -143,6 +143,8 @@ div#upload-container {
 
 #upload-container * {
     width: 45%;
+
+    text-align: center;
 }
 
 form button#validate {
