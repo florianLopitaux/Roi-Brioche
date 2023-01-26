@@ -1,8 +1,8 @@
 <?php
-echo '<div id="commentary" onclick=location.href="/recette/voir/' . $A_vue['appreciation']['id_Recette'] . '">';
+echo '<div id="commentary" onclick=location.href="/recette/detail/' . $A_vue['appreciation']['id_Recette'] . '">';
 
 if ($_SESSION['statut'] == 'administrateur' || $_SESSION['user'] == $A_vue['appreciation']['mail']) {
-    echo '<a id="delete-btn" href="/commentaire/supprimer/' . $A_vue['appreciation']['mail'] . '">❌</a>';
+    echo '<a id="delete-btn" href="/commentaire/supprimer/' . $A_vue['appreciation']['id_Recette'] . '">❌</a>';
 }
 
 echo '

@@ -21,7 +21,7 @@ class ControleurRecette
         }
     }
 
-    public function voirAction($A_getParam, $A_postParam)
+    public function detailAction($A_getParam, $A_postParam)
     {
         if (sizeof($A_getParam) == 0 or $A_getParam[0] == '') {
             header('Location: /recette');

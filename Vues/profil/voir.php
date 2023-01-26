@@ -2,6 +2,8 @@
 
 Vue::montrer('standard/header');
 
+echo '<main>';
+
 Vue::montrer('profil/profilResume', array('profil' => $A_vue['profil']));
 
 echo '<section id="commentaries-section" class="data-section">
