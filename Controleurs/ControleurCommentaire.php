@@ -33,8 +33,12 @@ class ControleurCommentaire
 
     public function supprimerAction($A_getParam, $A_postParam)
     {
-        if (isset($_SESSION['user']) && $A_getParam['id'] =! null && $A_getParam['id'] != '') {
-
+        var_dump($A_getParam);
+        exit();
+        $O_appreciation = new Appreciation();
+        if (($_SESSION['statut'] == 'administrateur' || $O_appreciation['mail'] == $_SESSION['user']) && sizeof($A_getParam) != 0 && $A_getParam[0] != '') {
+            header('Location: /404');
+            exit();
         }
         header('Location: /recette/voir/' . $A_getParam['id']);
         exit();
