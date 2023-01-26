@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26c5f7f-8e7c-4c00-afeb-27db520591ee" name="Changes" comment="Ajout de la fonction addAppreciation">
-      <change afterPath="$PROJECT_DIR$/Controleurs/ControleurCommentaire.php" afterDir="false" />
+    <list default="true" id="b26c5f7f-8e7c-4c00-afeb-27db520591ee" name="Changes" comment="Finission de la preview pour qu'elle soit clickable et supprimable par l'auteur ou l'administrateur">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controleurs/ControleurProfil.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controleurs/ControleurProfil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vues/gabarit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/gabarit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vues/profil/profilResume.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/profil/profilResume.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controleurs/ControleurCommentaire.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controleurs/ControleurCommentaire.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vues/commentaire/commentPreview.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/commentaire/commentPreview.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vues/profil/voir.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/profil/voir.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vues/recette/recette.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/recette/recette.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,26 +35,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
-    "WebServerToolWindowPanel.toolwindow.show.date": "false",
-    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
-    "WebServerToolWindowPanel.toolwindow.show.size": "false",
-    "last_opened_file_path": "C:/Users/lujes/PhpstormProjects/Project-php/css",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lujes/PhpstormProjects/Project-php/css&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lujes\PhpstormProjects\Project-php\css" />
@@ -92,70 +91,8 @@
       <workItem from="1674574733620" duration="745000" />
       <workItem from="1674575958808" duration="3854000" />
       <workItem from="1674672359491" duration="2474000" />
-      <workItem from="1674675534624" duration="10228000" />
-    </task>
-    <task id="LOCAL-00027" summary="Ajout de la requête pour avoir les résultats de la recherche">
-      <created>1674080222399</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1674080222399</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Ajout du header et du footer pour la page d'une recette">
-      <created>1674080279067</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1674080279067</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Ajout du titre">
-      <created>1674080287385</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1674080287385</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Ajout du titre">
-      <created>1674080297672</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1674080297672</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Gestion de résultat de la recherche vide">
-      <created>1674080474679</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1674080474679</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Ajout de vérification pour accéder à la page de connexion (Si on est déjà connecté, on ne peut pas s'inscrire ni se connecter. C'est juste par logique et non parce que ça ne fonctionne pas)">
-      <created>1674081217219</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1674081217219</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Ajout du message d'erreur quand le mot de passe n'est pas bon">
-      <created>1674157150455</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1674157150455</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Correction de la redirection">
-      <created>1674157267862</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1674157267862</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Gestion de si le formulaire n'est pas entièrement rempli">
-      <created>1674164194430</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1674164194430</updated>
+      <workItem from="1674675534624" duration="16075000" />
+      <workItem from="1674696321349" duration="827000" />
     </task>
     <task id="LOCAL-00036" summary="Ajout du controleur pour l'affichage du profil avec une verification de si l'utilisateur est log">
       <created>1674164228718</created>
@@ -437,7 +374,70 @@
       <option name="project" value="LOCAL" />
       <updated>1674686279407</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Ajout du controleur pour les commentaires avec le /commentaire/ajout/id, /commentaire/commenter/id et débu de /commentaire/supprimer/idCommentaire mais il n'y a pas encore de commentaire dans la table Appreciation">
+      <created>1674686386541</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1674686386541</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Ajout de la suppression d'un profil">
+      <created>1674686410779</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1674686410779</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Ajout du css pour les commentaires">
+      <created>1674686429813</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1674686429813</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Ajout TODO">
+      <created>1674686484425</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1674686484425</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Modification d'une redirection et la vue de la recette">
+      <created>1674686512829</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1674686512829</updated>
+    </task>
+    <task id="LOCAL-00081" summary="workspace.xml">
+      <created>1674686520129</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1674686520129</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Changement de la valeur de base pour la note du commentaire">
+      <created>1674696801853</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1674696801853</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Rectification de quelques erreurs">
+      <created>1674697123039</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1674697123039</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Finission de la preview pour qu'elle soit clickable et supprimable par l'auteur ou l'administrateur">
+      <created>1674697154365</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1674697154365</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,14 +455,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout d'une requête pour avoir les profils par rapport à leur mail ou leur pseudo" />
-    <MESSAGE value="Changement d'emplacement" />
-    <MESSAGE value="Nombre de profils non affiché quand on est sur le sien" />
-    <MESSAGE value="Changement des noms des variables" />
-    <MESSAGE value="Suppression du titre" />
-    <MESSAGE value="changements pour le css" />
-    <MESSAGE value="changement en class du formulaire" />
-    <MESSAGE value="Début de la page de recette a finir" />
     <MESSAGE value="Changement du nom du fichier (temporaire)" />
     <MESSAGE value="Ajout de la photo de profil" />
     <MESSAGE value="Vue pour un commentaire" />
@@ -473,14 +465,22 @@
     <MESSAGE value="Ajout du css pour le profil" />
     <MESSAGE value="Début de preview du profil" />
     <MESSAGE value="Début de la vue du profil" />
-    <MESSAGE value="workspace.xml" />
     <MESSAGE value="Correction d'un peu de css" />
     <MESSAGE value="Changement du nom d'un css" />
     <MESSAGE value="Suppression du bouton &quot;Ecrire un commentaire&quot; sur la page de profil" />
     <MESSAGE value="Faute d'orthographe" />
     <MESSAGE value="Début de la page d'ajout de commentaires" />
     <MESSAGE value="Ajout de la fonction addAppreciation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la fonction addAppreciation" />
+    <MESSAGE value="Ajout du controleur pour les commentaires avec le /commentaire/ajout/id, /commentaire/commenter/id et débu de /commentaire/supprimer/idCommentaire mais il n'y a pas encore de commentaire dans la table Appreciation" />
+    <MESSAGE value="Ajout de la suppression d'un profil" />
+    <MESSAGE value="Ajout du css pour les commentaires" />
+    <MESSAGE value="Ajout TODO" />
+    <MESSAGE value="Modification d'une redirection et la vue de la recette" />
+    <MESSAGE value="workspace.xml" />
+    <MESSAGE value="Changement de la valeur de base pour la note du commentaire" />
+    <MESSAGE value="Rectification de quelques erreurs" />
+    <MESSAGE value="Finission de la preview pour qu'elle soit clickable et supprimable par l'auteur ou l'administrateur" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finission de la preview pour qu'elle soit clickable et supprimable par l'auteur ou l'administrateur" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
