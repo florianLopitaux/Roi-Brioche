@@ -32,7 +32,7 @@
         echo '<link rel="stylesheet" href="/css/profil_style.css"/>';
         echo '<link rel="stylesheet" href="/css/comment_preview_style.css"/>';
     }
-    if ($A_url_param[1] == 'voir') {
+    if ($A_url_param[1] == 'detail') {
         echo '<link rel="stylesheet" href="/css/recipe_style.css"/>';
     }
     if ($A_url_param[1] == 'ajout') {

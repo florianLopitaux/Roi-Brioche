@@ -6,8 +6,13 @@
  ██████  ██████  ██      ██ ██      ██ ███████ ██   ████    ██    ██   ██ ██   ██ ██ ███████ ███████
 */
 section#commentaries-section {
+    width: 100%;
     max-height: 100vh;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 2vh;
 }
 
@@ -53,7 +58,6 @@ section#commentaries-section {
     text-decoration: none;
     background: transparent;
     border: 0;
-    color: red;
 }
 
 #commentary img {

@@ -136,3 +136,35 @@ section.data-section {
     width: 18%;
     text-align: center;
 }
+
+/*
+██████  ██████  ███████ ██████   █████      ███████ ███████  ██████ ████████ ██  ██████  ███    ██
+██   ██ ██   ██ ██      ██   ██ ██   ██     ██      ██      ██         ██    ██ ██    ██ ████   ██
+██████  ██████  █████   ██████  ███████     ███████ █████   ██         ██    ██ ██    ██ ██ ██  ██
+██      ██   ██ ██      ██      ██   ██          ██ ██      ██         ██    ██ ██    ██ ██  ██ ██
+██      ██   ██ ███████ ██      ██   ██     ███████ ███████  ██████    ██    ██  ██████  ██   ████
+*/
+section#preparation-list {
+    padding: 5vh 0;
+
+    width: 80%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 2vh;
+
+    background-color: white;
+    border-radius: 2vw;
+}
+
+#preparation-list h4 {
+    font-family: 'TT-Norms-Bold';
+}
+
+#preparation-list p {
+    text-align: center;
+    width: 70%;
+}

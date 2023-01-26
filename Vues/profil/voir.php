@@ -15,7 +15,8 @@ if ($A_vue['profil']['appreciations'] != null) {
     }
 
     echo '</section>
-    </section>';
+    </section>
+</main>';
 }
 
 Vue::montrer('standard/pied');
