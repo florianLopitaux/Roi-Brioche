@@ -102,7 +102,7 @@ class Utilisateur extends Model
      */
     public function getUserByNameOrEmail(string $S_recherche): array
     {
-        $O_query = $this->getOConnexion()->prepare("SELECT `mail`, `pseudo`, `photographie` FROM `Utilisateur` WHERE `mail` LIKE ? OR `pseudo` LIKE ?");
+        $O_query = $this->getOConnexion()->prepare("SELECT `mail`, `pseudo`, `dateDeCreation`, `dateDeDerniereConnexion`, `photographie` FROM `Utilisateur` WHERE `mail` LIKE ? OR `pseudo` LIKE ?");
         $O_query->execute(array("%$S_recherche%", "%$S_recherche%"));
 
         return $O_query->fetchAll(PDO::FETCH_ASSOC);

@@ -1,5 +1,13 @@
+div#recipe-btn-container {
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
 main {
-    margin-top: 10vh;
     margin-bottom: 10vh;
 
     width: 100%;

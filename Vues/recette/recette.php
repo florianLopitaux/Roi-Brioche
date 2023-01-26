@@ -2,6 +2,15 @@
 
 Vue::montrer('standard/header');
 
+if ($_SESSION['statut'] == 'administrateur') {
+    echo <<< HTML
+    <div id="recipe-btn-container">
+        <a class="basic-btn glass-effect">Modifier la recette</a>
+        <a class="basic-btn glass-effect">Supprimer la recette</a>
+    </div>
+HTML;
+}
+
 echo '<main>';
 
 Vue::montrer('recette/recetteResume', array('recette' => $A_vue['recette']));
