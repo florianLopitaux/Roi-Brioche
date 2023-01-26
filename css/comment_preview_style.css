@@ -74,6 +74,18 @@ section#commentaries-section {
     gap: 1vw;
 }
 
+i.star {
+    font-size: xx-large;
+}
+
+i.star.on {
+    color: yellow;
+}
+
+i.star.off {
+    color: grey;
+}
+
 #commentary p#comment-text {
     width: 50%;
     height: 90%;

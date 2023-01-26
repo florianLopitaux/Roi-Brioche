@@ -44,18 +44,6 @@ div#top-recipe-resume {
     gap: 2%;
 }
 
-i.star {
-    font-size: xx-large;
-}
-
-i.star.on {
-    color: yellow;
-}
-
-i.star.off {
-    color: grey;
-}
-
 a#commentaries {
     width: 100%;
 
