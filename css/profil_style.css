@@ -1,3 +1,10 @@
+h1#title-result {
+    width: 100%;
+
+    text-align: center;
+    font-family: 'TT-Norms-Bold';
+}
+
 main {
     margin-top: 5vh;
 
