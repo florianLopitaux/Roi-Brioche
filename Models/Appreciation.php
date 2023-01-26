@@ -55,4 +55,16 @@ final class Appreciation extends Model {
         $O_query = $this->getOConnexion()->prepare('INSERT INTO `Appreciation` (`id_Recette`, `mail`, `commentaire`, `note`, `dateDeCreation`) VALUES (?, ?, ?, ?, ?)');
         $O_query->execute(array($I_id_Recette, $S_mail, $S_commentaire, $I_note, $D_date));
     }
+
+    /**
+     * Fonction qui permet de supprimer une appreciation
+     *
+     * @param int $I_id_Recette : id de la recette
+     * @param string $S_mail : mail de l'utilisateur
+     */
+    public function deleteAppreciation(int $I_id_Recette, string $S_mail) : void
+    {
+        $O_query = $this->getOConnexion()->prepare('DELETE FROM `Appreciation` WHERE `id_Recette` = ? AND `mail` = ?');
+        $O_query->execute(array($I_id_Recette, $S_mail));
+    }
 }
