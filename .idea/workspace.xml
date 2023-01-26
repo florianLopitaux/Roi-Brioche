@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b26c5f7f-8e7c-4c00-afeb-27db520591ee" name="Changes" comment="Finission de la preview pour qu'elle soit clickable et supprimable par l'auteur ou l'administrateur">
+    <list default="true" id="b26c5f7f-8e7c-4c00-afeb-27db520591ee" name="Changes" comment="Ajout d'une page de recherche par utilisateur">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controleurs/ControleurCommentaire.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controleurs/ControleurCommentaire.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vues/commentaire/commentPreview.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/commentaire/commentPreview.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vues/profil/voir.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/profil/voir.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vues/recette/recette.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/recette/recette.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vues/gabarit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Vues/gabarit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,26 +32,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lujes/PhpstormProjects/Project-php/css&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "last_opened_file_path": "/amuhome/c21201897/Bureau/Project-php",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "two.files.diff.last.used.file": "/amuhome/c21201897/Bureau/Project-php/css/inscription_style.css",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lujes\PhpstormProjects\Project-php\css" />
@@ -93,34 +91,8 @@
       <workItem from="1674672359491" duration="2474000" />
       <workItem from="1674675534624" duration="16075000" />
       <workItem from="1674696321349" duration="827000" />
-    </task>
-    <task id="LOCAL-00036" summary="Ajout du controleur pour l'affichage du profil avec une verification de si l'utilisateur est log">
-      <created>1674164228718</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1674164228718</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Modification de la redirection du bouton profil">
-      <created>1674164260756</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1674164260756</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Ajout de la fonction qui permet d'avoir les informations sur l'utilisateur et toutes ses appréciations">
-      <created>1674164306480</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1674164306480</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Ajout de la vue pour le profil mais sans la mise en page">
-      <created>1674164331118</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1674164331118</updated>
+      <workItem from="1674726870684" duration="1632000" />
+      <workItem from="1674741371807" duration="5946000" />
     </task>
     <task id="LOCAL-00040" summary="Ajout du nombre de recette dans la recherche et dans &quot;toutes les recettes&quot;">
       <created>1674232974368</created>
@@ -437,7 +409,35 @@
       <option name="project" value="LOCAL" />
       <updated>1674697154365</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="Passage de /recette/voir à /recette/detail">
+      <created>1674727047844</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1674727047845</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Finition des fonction pour supprimer un commentaire">
+      <created>1674727069279</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1674727069279</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Ajout d'une page de recherche par utilisateur">
+      <created>1674743530779</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1674743530780</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Ajout d'une page de recherche par utilisateur">
+      <created>1674743717037</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1674743717037</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,9 +455,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Changement du nom du fichier (temporaire)" />
-    <MESSAGE value="Ajout de la photo de profil" />
-    <MESSAGE value="Vue pour un commentaire" />
     <MESSAGE value="Finition de la page sans la fin du css" />
     <MESSAGE value="Alignement de la description" />
     <MESSAGE value="Changement d'un nom d'array" />
@@ -480,7 +477,10 @@
     <MESSAGE value="Changement de la valeur de base pour la note du commentaire" />
     <MESSAGE value="Rectification de quelques erreurs" />
     <MESSAGE value="Finission de la preview pour qu'elle soit clickable et supprimable par l'auteur ou l'administrateur" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finission de la preview pour qu'elle soit clickable et supprimable par l'auteur ou l'administrateur" />
+    <MESSAGE value="Passage de /recette/voir à /recette/detail" />
+    <MESSAGE value="Finition des fonction pour supprimer un commentaire" />
+    <MESSAGE value="Ajout d'une page de recherche par utilisateur" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout d'une page de recherche par utilisateur" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
