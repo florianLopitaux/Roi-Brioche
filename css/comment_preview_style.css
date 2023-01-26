@@ -39,7 +39,7 @@ section#commentaries-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
+    flex-direction: row;
     gap: 5%;
 
     background-color: white;
@@ -62,14 +62,29 @@ section#commentaries-section {
 
 .commentary img {
     width: auto;
+    max-width: 30%;
     height: 90%;
 }
 
-.commentary h4.profile-name {
+.commentary div#data-container {
+    width: 30%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3%;
+}
+
+#data-container h4.profile-name {
+    max-height: 30%;
     font-family: 'TT-Norms-Bold';
 }
 
-.commentary div.stars-container {
+#data-container div.stars-container {
+    max-height: 30%;
+
     display: flex;
     gap: 1vw;
 }
@@ -87,6 +102,33 @@ i.star.off {
 }
 
 .commentary p.comment-text {
-    width: 50%;
+    width: 30%;
     height: 90%;
+}
+
+@media screen and (max-width: 880px) {
+    #commentary-list section.commentary {
+        width: 85%;
+        height: 40vh;
+
+        flex-wrap: wrap;
+        gap: 4%;
+    }
+
+    .commentary img {
+        width: 35%;
+        max-width: none;
+        height: auto;
+        max-height: 50%;
+    }
+
+    .commentary div#data-container {
+        width: 40%;
+        height: 50%;
+    }
+
+    .commentary p.comment-text {
+        width: 85%;
+        height: 45%;
+    }
 }
