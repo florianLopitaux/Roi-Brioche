@@ -10,8 +10,14 @@ echo
 
             <div id="btn-container">
                 <a id="create-recipe-btn" class="basic-btn" href="/recette">Voir toutes les recettes</a>
-                <a id="categories-btn" class="basic-btn glass-effect" href="/">Créer une recette</a>
-            </div>
+                <a class="basic-btn" href="/profil/recherche">Recherche par utilisateur</a>';
+
+if ($_SESSION['statut'] == 'administrateur') {
+    echo '<a id="categories-btn" class="basic-btn glass-effect" href="/">Créer une recette</a>';
+}
+
+echo
+'</div>
         </section>
 
         <img src="assets/img/3D-logo-with-hand.svg" alt="decoration image representing a hand with the website logo above"/>

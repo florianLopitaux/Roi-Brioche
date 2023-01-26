@@ -1,13 +1,13 @@
 <?php
-$S_r;
-$S_searchName;
+$S_action = null;
+$S_searchName = null;
 
 if (strpos($_GET['url'], 'profil') === false) {
-    $S_r = '/recette/';
+    $S_action = '/recette/';
     $S_searchName = 'recettes';
 
 } else {
-    $S_r = '/utilisateur/';
+    $S_action = '/profil/recherche/';
     $S_searchName = 'profils';
 }
 
@@ -17,7 +17,7 @@ echo
             <img id="rolling-pin" src="/assets/img/rolling-pin.svg" alt="Rolling pin 3D image to decoration"/>
         </a>
 
-        <form action="' . $r . '" class="search-bar" method=GET>
+        <form action="' . $S_action . '" class="search-bar" method=GET>
             <img src="/assets/img/search-sharp.svg" alt="loop image in the search bar for design"/>
             <input type="text" name="search" placeholder="Rechercher des ' . $S_searchName . '"/>
         </form>';
