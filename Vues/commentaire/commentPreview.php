@@ -1,5 +1,5 @@
 <?php
-echo '<section class="commentary" onclick=location.href="/recette/detail/' . $A_vue['appreciation']['id_Recette'] . '">';
+echo '<section class="commentary" onclick=location.href="/profil/voir/' . $A_vue['appreciation']['mail'] . '">';
 
 if ($_SESSION['statut'] == 'administrateur' || $_SESSION['user'] == $A_vue['appreciation']['mail']) {
     echo '<a class="delete-btn" href="/commentaire/supprimer/' . $A_vue['appreciation']['id_Recette'] . '">❌</a>';

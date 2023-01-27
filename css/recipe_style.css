@@ -57,6 +57,8 @@ a#commentaries {
 
     text-align: center;
     color: orange;
+    font-family: 'TT-Norms-Bold';
+    font-size: 1.1em;
 }
 
 div#bottom-recipe-resume {
@@ -74,6 +76,8 @@ span.preparation-data {
     height: 45%;
 
     text-align: center;
+    font-family: 'TT-Norms-Bold';
+    font-size: 1.1em;
 }
 
 /*
