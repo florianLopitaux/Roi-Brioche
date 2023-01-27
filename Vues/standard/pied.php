@@ -20,85 +20,85 @@ echo
 
             <section id="right-bottom-box">
                 <section class="list-items-container">
-                    <h5 class="title-category">particularités:</h5>
+                    <h5 class="title-category">Particularités:</h5>
                     <ul class="list-items">
-                        <li class="item">végétarien</li>
-                        <li class="item">végan</li>
-                        <li class="item">sans gluten</li>
-                        <li class="item">sans lactose</li>
+                        <li class="item">Végétarien</li>
+                        <li class="item">Végan</li>
+                        <li class="item">Sans gluten</li>
+                        <li class="item">Sans lactose</li>
                     </ul>
                 </section>
 
                 <section class="list-items-container">
-                    <h5 class="title-category">type de cuissons:</h5>
+                    <h5 class="title-category">Type de cuissons:</h5>
                     <ul class="list-items">
-                        <li class="item">micro-onde</li>
-                        <li class="item">poele</li>
-                        <li class="item">four</li>
-                        <li class="item">fritteuse</li>
+                        <li class="item">Micro-onde</li>
+                        <li class="item">Poêle</li>
+                        <li class="item">Four</li>
+                        <li class="item">Friteuse</li>
                     </ul>
                 </section>
                 
                 <section class="list-items-container">
-                    <h5 class="title-category">frouchette de prix:</h5>
+                    <h5 class="title-category">Fourchette de prix:</h5>
                     <ul class="list-items">
-                        <li class="item">bon marché</li>
-                        <li class="item">coût moyen</li>
-                        <li class="item">asser cher</li>
+                        <li class="item">Bon marché</li>
+                        <li class="item">Moyen</li>
+                        <li class="item">Assez cher</li>
                     </ul>
                 </section>
 
                 <section class="list-items-container">
-                    <h5 class="title-category">difficultés:</h5>
+                    <h5 class="title-category">Difficultés:</h5>
                     <ul class="list-items">
-                        <li class="item">très facile</li>
-                        <li class="item">facile</li>
-                        <li class="item">moyen</li>
-                        <li class="item">difficile</li>
+                        <li class="item">Très facile</li>
+                        <li class="item">Facile</li>
+                        <li class="item">Moyen</li>
+                        <li class="item">Difficile</li>
                     </ul>
                 </section>
 
                 <section class="list-items-container">
-                    <h5 class="title-category">ingrédients:</h5>
+                    <h5 class="title-category">Ingrédients:</h5>
                     <ul class="list-items">
-                        <li class="item">farine</li>
-                        <li class="item">sel</li>
-                        <li class="item">lait</li>
-                        <li class="item">sucre</li>
-                        <li class="item">levure chimique</li>
-                        <li class="item">vanille</li>
-                        <li class="item">colorant alimentaire</li>
-                        <li class="item">beurre</li>
-                        <li class="item">canelle</li>
-                        <li class="item">noix de muscade</li>
-                        <li class="item">huile</li>
-                        <li class="item">oeuf</li>
-                        <li class="item">chocolat</li>
-                        <li class="item">caramel</li>
-                        <li class="item">fruits</li>
-                        <li class="item">arome naturel</li>
+                        <li class="item">Farine</li>
+                        <li class="item">Sel</li>
+                        <li class="item">Lait</li>
+                        <li class="item">Sucre</li>
+                        <li class="item">Levure chimique</li>
+                        <li class="item">Vanille</li>
+                        <li class="item">Colorant alimentaire</li>
+                        <li class="item">Beurre</li>
+                        <li class="item">Canelle</li>
+                        <li class="item">Noix de muscade</li>
+                        <li class="item">Huile</li>
+                        <li class="item">Oeuf</li>
+                        <li class="item">Chocolat</li>
+                        <li class="item">Caramel</li>
+                        <li class="item">Fruits</li>
+                        <li class="item">Arome naturel</li>
                     </ul>
                 </section>
 
                 <section class="list-items-container">
-                    <h5 class="title-category">ustensiles:</h5>
+                    <h5 class="title-category">Ustensiles:</h5>
                     <ul class="list-items">
-                        <li class="item">fouet</li>
-                        <li class="item">couteau</li>
-                        <li class="item">maryse</li>
-                        <li class="item">poche à douille</li>
-                        <li class="item">spatule</li>
-                        <li class="item">robot pâtissier</li>
-                        <li class="item">emporte pièces</li>
-                        <li class="item">moules</li>
-                        <li class="item">verre doseur</li>
-                        <li class="item">balance</li>
-                        <li class="item">cuilière</li>
-                        <li class="item">tamis</li>
-                        <li class="item">cul de poule</li>
-                        <li class="item">tapis de cuisson</li>
-                        <li class="item">râpe</li>
-                        <li class="item">rouleau de pâtisserie</li>
+                        <li class="item">Fouet</li>
+                        <li class="item">Couteau</li>
+                        <li class="item">Maryse</li>
+                        <li class="item">Poche à douille</li>
+                        <li class="item">Spatule</li>
+                        <li class="item">Robot pâtissier</li>
+                        <li class="item">Emporte pièces</li>
+                        <li class="item">Moules</li>
+                        <li class="item">Verre doseur</li>
+                        <li class="item">Balance</li>
+                        <li class="item">Cuillière</li>
+                        <li class="item">Tamis</li>
+                        <li class="item">Cul de poule</li>
+                        <li class="item">Tapis de cuisson</li>
+                        <li class="item">Râpe</li>
+                        <li class="item">Rouleau de pâtisserie</li>
                     </ul>
                 </section>
             </section>

@@ -1,7 +1,16 @@
 <?php
 
-class ControleurCommentaire
+/**
+ * Classe qui gère les interactions avec les vues de commentaires et avec le modèle Appreciation
+ */
+final class ControleurCommentaire
 {
+    /**
+     * Fonction qui permet d'ajouter une appreciation.
+     *
+     * @param $A_getParam : tableau contenant les paramètres de l'url.
+     * @param $A_postParam : tableau contenant les paramètres du formulaire.
+     */
     public function ajoutAction($A_getParam, $A_postParam)
     {
         if (isset($_SESSION['user']) && sizeof($A_getParam) != 0 && $A_getParam[0] != '') {
@@ -13,6 +22,12 @@ class ControleurCommentaire
         }
     }
 
+    /**
+     * Fonction qui permet d'ajouter une appreciation. Elle est appelée par le formulaire de la vue commentaire/ajout.
+     *
+     * @param $A_getParam : tableau contenant les paramètres de l'url.
+     * @param $A_postParam : tableau contenant les paramètres du formulaire.
+     */
     public function commenterAction($A_getParam, $A_postParam)
     {
         if (isset($_SESSION['user']) && sizeof($A_getParam) != 0 && $A_getParam[0] != '') {
@@ -31,6 +46,12 @@ class ControleurCommentaire
         exit();
     }
 
+    /**
+     * Fonction qui permet de supprimer une appreciation.
+     *
+     * @param $A_getParam : tableau contenant les paramètres de l'url.
+     * @param $A_postParam : tableau contenant les paramètres du formulaire.
+     */
     public function supprimerAction($A_getParam, $A_postParam)
     {
         if (sizeof($A_getParam) != 0 && $A_getParam[0] != '') {

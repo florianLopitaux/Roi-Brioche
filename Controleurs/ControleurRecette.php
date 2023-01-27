@@ -1,7 +1,13 @@
 <?php
 
-class ControleurRecette
+/**
+ * Classe qui gère les interactions avec le modèle Recette et les vues de recette.
+ */
+final class ControleurRecette
 {
+    /**
+     * Fonction qui permet d'afficher toutes les recettes.
+     */
     public function defautAction($A_getParam, $A_postParam)
     {
         $O_recette = new Recette();
@@ -21,6 +27,12 @@ class ControleurRecette
         }
     }
 
+    /**
+     * Fonction qui permet d'afficher une recette.
+     *
+     * @param $A_getParam : tableau contenant les paramètres de l'url.
+     * @param $A_postParam : tableau contenant les paramètres du formulaire.
+     */
     public function detailAction($A_getParam, $A_postParam)
     {
         if (sizeof($A_getParam) == 0 or $A_getParam[0] == '') {
@@ -32,6 +44,12 @@ class ControleurRecette
         Vue::montrer('recette/recette', array('recette' =>  $O_recette->getRecetteById($A_getParam[0])));
     }
 
+    /**
+     * Fonction qui permet de supprimer une recette.
+     *
+     * @param $A_getParam : tableau contenant les paramètres de l'url.
+     * @param $A_postParam : tableau contenant les paramètres du formulaire.
+     */
     public function supprimerAction($A_getParam, $A_postParam)
     {
         if ($_SESSION['statut'] == 'administrateur' && isset($A_getParam) && $A_getParam[0] != '') {

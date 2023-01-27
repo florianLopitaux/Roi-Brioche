@@ -22,5 +22,3 @@ if ($A_vue['profil']['appreciations'] != null) {
 }
 
 Vue::montrer('standard/pied');
-
-// TODO Faire le style https://cdn.discordapp.com/attachments/927995192391401532/1067219975229681814/image.png

@@ -3,7 +3,7 @@
 /**
  * Classe qui gère les interactions avec la table Utilisateur
  */
-class Utilisateur extends Model
+final class Utilisateur extends Model
 {
 
     /**

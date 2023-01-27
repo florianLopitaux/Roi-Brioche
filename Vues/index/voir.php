@@ -1,7 +1,6 @@
 <?php
 Vue::montrer('standard/header');
 
-// TODO Ajouter la liaison avec la création de recettes pour le bouton "Créer une recette"
 echo
 '<main>
     <section id="home-section">

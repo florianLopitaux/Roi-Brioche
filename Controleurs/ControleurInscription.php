@@ -1,7 +1,13 @@
 <?php
 
-class ControleurInscription
+/**
+ * Classe qui gère les interactions avec le modèle Utilisateur et les vues d'inscription.
+ */
+final class ControleurInscription
 {
+    /**
+     * Fonction qui permet d'aller sur la page d'inscription.
+     */
     public function defautAction()
     {
         if (isset($_SESSION['user'])) {
@@ -12,6 +18,12 @@ class ControleurInscription
         Vue::montrer('inscription/voir', array('' =>  ''));
     }
 
+    /**
+     * Fonction qui permet de s'inscrire. Elle est appelée par le formulaire de la vue inscription/voir. Gère aussi la taille et l'extension des images.
+     *
+     * @param $A_getParam : tableau contenant les paramètres de l'url.
+     * @param $A_postParam : tableau contenant les paramètres du formulaire.
+     */
     public function inscriptionAction($A_getParam, $A_postParam)
     {
         $S_pseudo = !empty($A_postParam['pseudo']) ? $A_postParam['pseudo'] : null;

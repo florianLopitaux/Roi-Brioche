@@ -1,6 +1,13 @@
 <?php
-class ControleurConnexion
+
+/**
+ * Classe qui gère les interactions avec le modèle Utilisateur et les vues de connexion.
+ */
+final class ControleurConnexion
 {
+    /**
+     * Fonction qui permet d'aller sur la page de connexion.
+     */
     public function defautAction()
     {
         if (isset($_SESSION['user'])) {
@@ -10,6 +17,12 @@ class ControleurConnexion
         Vue::montrer('connexion/voir', array('' =>  ''));
     }
 
+    /**
+     * Fonction qui permet de se connecter. Elle est appelée par le formulaire de la vue connexion/voir.
+     *
+     * @param $A_getParam : tableau contenant les paramètres de l'url.
+     * @param $A_postParam : tableau contenant les paramètres du formulaire.
+     */
     public function connexionAction($A_getParam, $A_postParam)
     {
         $S_email = !empty($A_postParam['email']) ? $A_postParam['email'] : null;

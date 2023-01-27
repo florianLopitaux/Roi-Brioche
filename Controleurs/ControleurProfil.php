@@ -1,7 +1,13 @@
 <?php
 
-class ControleurProfil
+/**
+ * Classe qui gère les interactions avec le modèle Utilisateur et les vues de profil.
+ */
+final class ControleurProfil
 {
+    /**
+     * Fonction qui permet d'aller sur la page de profil.
+     */
     public function defautAction()
     {
         if (isset($_SESSION['user'])) {
@@ -13,6 +19,12 @@ class ControleurProfil
         }
     }
 
+    /**
+     * Fonction qui permet d'afficher un utilisateur.
+     *
+     * @param $A_getParam : tableau contenant les paramètres de l'url.
+     * @param $A_postParam : tableau contenant les paramètres du formulaire.
+     */
     public function voirAction($A_getParam, $A_postParam)
     {
         if (isset($A_getParam[0]) && $A_getParam[0] != '') {
@@ -24,6 +36,12 @@ class ControleurProfil
         }
     }
 
+    /**
+     * Fonction qui permet de supprimer un utilisateur.
+     *
+     * @param $A_getParam : tableau contenant les paramètres de l'url.
+     * @param $A_postParam : tableau contenant les paramètres du formulaire.
+     */
     public function supprimerAction($A_getParam, $A_postParam)
     {
         if ($_SESSION['statut'] == 'administrateur' && isset($A_getParam) && $A_getParam[0] != '') {
@@ -38,6 +56,12 @@ class ControleurProfil
         }
     }
 
+    /**
+     * Fonction qui permet de recherche un utilisateur
+     *
+     * @param $A_getParam : tableau contenant les paramètres de l'url.
+     * @param $A_postParam : tableau contenant les paramètres du formulaire.
+     */
     public function rechercheAction($A_getParam, $A_postParam)
     {
         if (empty($_GET['search'])) {
@@ -56,6 +80,11 @@ class ControleurProfil
         }
     }
 
+    /**
+     * Fonction qui affiche un utilisateur en appelant la vue profil/voir.
+     *
+     * @param string $mail
+     */
     public function showUser(string $mail): void
     {
         $O_utilisateur = new Utilisateur();
