@@ -31,4 +31,18 @@ class ControleurRecette
         $O_recette = new Recette();
         Vue::montrer('recette/recette', array('recette' =>  $O_recette->getRecetteById($A_getParam[0])));
     }
+
+    public function supprimerAction($A_getParam, $A_postParam)
+    {
+        if ($_SESSION['statut'] == 'administrateur' && isset($A_getParam) && $A_getParam[0] != '') {
+            $O_recette = new Recette();
+            $O_recette->deleteRecette($A_getParam[0]);
+            header('Location: /recette');
+            exit();
+        }
+        else {
+            header('Location: /recette/voir/' . $A_getParam[0]);
+            exit();
+        }
+    }
 }

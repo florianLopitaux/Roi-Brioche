@@ -3,12 +3,11 @@
 Vue::montrer('standard/header');
 
 if ($_SESSION['statut'] == 'administrateur') {
-    echo <<< HTML
+    echo '
     <div id="recipe-btn-container">
-        <a class="basic-btn glass-effect">Modifier la recette</a>
-        <a class="basic-btn glass-effect">Supprimer la recette</a>
-    </div>
-HTML;
+        <a class="basic-btn glass-effect" href="/">Modifier la recette</a>
+        <a class="basic-btn glass-effect" href="/recette/supprimer/ ' . $A_vue['recette']['id_Recette'] . '">Supprimer la recette</a>
+    </div>';
 }
 
 echo '<main>';
