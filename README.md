@@ -9,3 +9,6 @@ Ce projet a été créé par des étudiants pour les étudiants. Il vous permett
 
 # Remerciements
 Nous tenons à remercier tous les contributeurs pour leur soutien dans la création de ce site. Nous espérons que vous apprécierez et bonne pâtisserie !
+
+# Diagramme de notre base de données
+![diagramme bdd](assets/img/Present_Roi_Brioche.png)
