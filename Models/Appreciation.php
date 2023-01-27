@@ -57,14 +57,25 @@ final class Appreciation extends Model {
     }
 
     /**
-     * Fonction qui permet de supprimer une appreciation
+     * Fonction qui permet de supprimer une appreciation.
      *
-     * @param int $I_id_Recette : id de la recette
-     * @param string $S_mail : mail de l'utilisateur
+     * @param int $I_id_Recette : id de la recette.
+     * @param string $S_mail : mail de l'utilisateur.
      */
     public function deleteAppreciation(int $I_id_Recette, string $S_mail) : void
     {
         $O_query = $this->getOConnexion()->prepare('DELETE FROM `Appreciation` WHERE `id_Recette` = ? AND `mail` = ?');
         $O_query->execute(array($I_id_Recette, $S_mail));
+    }
+
+    /**
+     * Fonction qui permet de supprimer toutes les appreciations d'une recette.
+     *
+     * @param int $I_id_Recette : id de la recette.
+     */
+    public function deleteAllAppreciationByRecetteId(int $I_id_Recette) : void
+    {
+        $O_query = $this->getOConnexion()->prepare('DELETE FROM `Appreciation` WHERE `id_Recette` = ?');
+        $O_query->execute(array($I_id_Recette));
     }
 }
